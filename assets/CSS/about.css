@@ -1,0 +1,108 @@
+body{
+    background-image: url(../IMG/fundoRoxo.jpg); 
+}
+
+/* Estilos gerais da sidebar */
+.sidebar {
+    background-color: #EDD989;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: width 0.3s ease;
+    width: 90px;
+    overflow: hidden;
+}
+
+/* Logo */
+.logo {
+    margin-bottom: 30px;
+}
+
+/* Navegação */
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin-bottom: 45px;
+}
+
+.sidebar nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+ background-color: #BBAB6C; /* Cor de fundo ao passar o mouse */
+ transform: scale(1.2);
+ }
+
+/* Esconde o texto inicialmente */
+.sidebar nav ul li a span {
+    display: none;
+}
+
+/* Mostra o texto ao passar o mouse */
+.sidebar:hover {
+    width: 250px;
+}
+
+.sidebar:hover nav ul li a span {
+    display: inline;
+}
+
+.sidebar nav ul li i {
+    margin-right: 10px;
+}
+/* Fim Sidebar */
+
+/* Início do conteúdo principal */
+body main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px 30%;
+    gap: 30px;
+}
+
+#titulo {
+    display: flex;
+}
+
+#titulo img {
+    width: 150px;
+}
+
+#titulo h1{
+    color: rgb(237, 217, 137);
+    margin-top: 40px;
+    font-size: 60px;
+}
+
+.container {
+    background-color: rgb(237, 217, 137);
+    border-radius: 20px;
+}
+
+#container1 {
+    width: 800px;
+    height: 130px;
+}
+
+.container p {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(95, 66, 112);
+}
+
+/* Fim do conteúdo principal */
