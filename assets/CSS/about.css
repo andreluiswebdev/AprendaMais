@@ -84,6 +84,9 @@ body main{
 }
 
 #titulo h1{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-style: italic;
     color: rgb(237, 217, 137);
     margin-top: 40px;
     font-size: 60px;
@@ -100,10 +103,10 @@ body main{
 }
 
 .container p {
-    font-size: 20px;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
-    font-style: italic;
+    font-style: normal;
+    font-size: 20px;
     color: rgb(95, 66, 112);
     padding: 10px;
 }
