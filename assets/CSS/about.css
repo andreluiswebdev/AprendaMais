@@ -96,13 +96,16 @@ body main{
 
 #container1 {
     width: 800px;
-    height: 130px;
+    height: 143px;
 }
 
 .container p {
     font-size: 20px;
     font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-style: italic;
     color: rgb(95, 66, 112);
+    padding: 10px;
 }
 
 /* Fim do conteúdo principal */
