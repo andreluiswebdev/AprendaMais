@@ -94,6 +94,7 @@ header{
     transform: scale(1.2);
 }
 
+/*início footer*/
 footer{
     background-color: #EDD989;
     padding: 30px;
@@ -126,3 +127,4 @@ footer .fLink{
 footer .fLink:hover{
     color: rgb(117, 100, 68);
 }
+/*fim footer*/

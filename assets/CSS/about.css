@@ -93,6 +93,44 @@ header{
     background-color: #BBAB6C; /* Cor de fundo ao passar o mouse */
     transform: scale(1.2);
 }
+/*fim header*/
+
+
+/*início footer*/
+footer{
+    background-color: #EDD989;
+    padding: 30px;
+    margin-top: 717px;
+    margin-left: 90px;
+    display: flex;
+    gap: 50px;
+}
+
+footer a{
+    color: #000000;
+    text-decoration: none;
+}
+
+footer img{
+    width: 100px;
+}
+
+footer .fColunas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 200px;
+}
+
+footer .fLink{
+    transition: 0.3s;
+}
+
+footer .fLink:hover{
+    color: rgb(117, 100, 68);
+}
+/*fim footer*/
+
 
 /* Início do conteúdo principal */
 body main{
