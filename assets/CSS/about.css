@@ -66,6 +66,34 @@ body{
 }
 /* Fim Sidebar */
 
+/*Estilos gerais da header*/
+header{
+    background-color: #EDD989;
+    height: 70px;
+}
+#hLinks{ /*links da header*/
+    display: flex;
+    gap: 40px;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+}
+
+.hLinks{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+    padding: 5px;
+}
+
+.hLinks:hover{
+    background-color: #BBAB6C; /* Cor de fundo ao passar o mouse */
+    transform: scale(1.2);
+}
+
 /* Início do conteúdo principal */
 body main{
     display: flex;
