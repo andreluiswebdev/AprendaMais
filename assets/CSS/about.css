@@ -1,75 +1,151 @@
-body{
-    background-image: url(../IMG/fundoRoxo.jpg); 
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Estilos gerais da sidebar */
-.sidebar {
-    background-color: #EDD989;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-    transition: width 0.3s ease;
-    width: 90px;
-    overflow: hidden;
-}
-
-/* Logo */
-.logo {
-    margin-bottom: 30px;
-}
-
-/* Navegação */
-.sidebar nav ul {
-    list-style: none;
+*{
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-.sidebar nav ul li {
-    margin-bottom: 45px;
+body{
+    display: flex; /*  coloquei para deixar a sidebar sempre no lado esquerdo */
+    min-height: 100vh;
+    background-image: url(../IMG/fundoRoxo.jpg); 
+
 }
 
-.sidebar nav ul li a {
-    color: #000000;
+/* INICIO SIDEBAR */
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #EDD989;
+    height: 100%; /* p ela ficar somente na primeira pg, ou coloco um fixed? */
+    border-radius: 0px 18px 18px 0px;
+    position: relative;
+    transition: all .5s;
+    min-width: 82px;
+}
+
+#sidebar_content{
+    padding: 12px; 
+}
+
+#logo-sidebar{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+#logo_icon{
+    width: 60px;
+    height: 50px;
+    object-fit: cover;
+}
+
+#logo-infos{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo-infos span:last-child{
+    color: #6b6b6b;
+    font-size: 12px;
+}
+
+#side_items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 8px;
+    padding: 14px;
+    cursor: pointer;
+}
+
+.side-item.active {
+    background-color: #512da8;
+}
+
+.side-item:hover:not(.active){
+    background-color:  #e0c556;
+}
+
+.side-item a{
     text-decoration: none;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a0a0a;
+}
+
+.side-item.active a {
+    color: #e3e9f7;
+}
+
+.side-item a i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+}
+
+#open_btn{
+    position: absolute;
+    top: 30px;
+    right: -10px;
+    background-color: #f0c000;
+    color: #000;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+#open_btn_icon {
+    transition: transform .3s ease;
+}
+
+.logo-description{
+    width: 0px;
+    overflow: hidden;
     white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .3s;
+    height: 0px;
 }
 
-.sidebar nav ul li a:hover,
-.sidebar nav ul li a.active {
- background-color: #BBAB6C; /* Cor de fundo ao passar o mouse */
- transform: scale(1.2);
- }
-
-/* Esconde o texto inicialmente */
-.sidebar nav ul li a span {
-    display: none;
+#sidebar.open-sidebar {
+    min-width: 15%;
 }
 
-/* Mostra o texto ao passar o mouse */
-.sidebar:hover {
-    width: 250px;
+#sidebar.open-sidebar .logo-description {
+    width: 150px;
+    height: auto;
 }
 
-.sidebar:hover nav ul li a span {
-    display: inline;
+#sidebar.open-sidebar .side-item a {
+    justify-content: flex-start;
+    gap: 14px;
 }
+/* FIM SIDEBAR */
 
-.sidebar nav ul li i {
-    margin-right: 10px;
+.todoConteudo{
+    width: 100%;
 }
-/* Fim Sidebar */
 
 /*Estilos gerais da header*/
 header{
     background-color: #EDD989;
     height: 70px;
+    width: 100%;
 }
 #hLinks{ /*links da header*/
     display: flex;
@@ -100,8 +176,7 @@ header{
 footer{
     background-color: #EDD989;
     padding: 30px;
-    margin-top: 717px;
-    margin-left: 90px;
+    width: 100%;
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
@@ -139,35 +214,29 @@ body main{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 30px 30%;
+    margin: 30px;
     gap: 30px;
 }
 
 #titulo {
     display: flex;
+    width: 100px;
 }
 
 #titulo img {
-    width: 150px;
+    width: 100px;
+    height: 100px;
 }
 
 #titulo h1{
-    font-family: "Quicksand", sans-serif;
     font-weight: 600;
-    font-style: italic;
     color: rgb(237, 217, 137);
-    margin-top: 40px;
     font-size: 60px;
 }
 
 .container {
     background-color: rgb(237, 217, 137);
     border-radius: 20px;
-}
-
-#container1 {
-    width: 800px;
-    height: 143px;
 }
 
 .container p {

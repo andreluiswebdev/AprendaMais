@@ -13,74 +13,131 @@
 
 <body>
 
-    <div class="sidebar">
-        <div class="logo">
-            <a href="./index.html"><img src="assets/IMG/logo.png" width="60px" height="60px" alt="Logo Aprenda+"></a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio" class="active"><i class="bi bi-house-fill"></i> <span>Início</span></a></li>
-                <li><a href="#disciplinas"><i class="bi bi-mortarboard-fill"></i> <span>Disciplinas</span></a></li>
-                <li><a href="#temporada"><i class="bi bi-trophy-fill"></i> <span>Temporada</span></a></li>
-                <li><a href="#comunidade"><i class="bi bi-people-fill"></i> <span>Comunidade</span></a></li>
-                <li><a href="#suporte"><i class="bi bi-question-circle-fill"></i> <span>Suporte</span></a></li>
-            </ul>
+    <aside>
+        <nav id="sidebar">
+            <div id="sidebar_content">
+                <div id="logo-sidebar">
+                    <img src="assets/IMG/logo.png" id="logo_icon" alt="Logo Aprenda+">
+
+                    <p id="logo-infos">
+                        <span class="logo-description">
+                            Aprenda Mais
+                        </span>
+                        <span class="logo-description">
+                            Seu futuro começa aqui
+                        </span>
+                    </p>
+                </div>
+
+                <ul id="side_items">
+                    <li class="side-item">
+                        <a href="#inicio">
+                            <i class="bi bi-house-fill"></i>
+                            <span class="logo-description">Início</span>
+                        </a>
+                    </li>
+
+                    <li class="side-item active">
+                        <a href="#disciplinas">
+                            <i class="bi bi-mortarboard-fill"></i>
+                            <span class="logo-description">Disciplinas</span>
+                        </a>
+                    </li>
+
+                    <li class="side-item">
+                        <a href="#temporada">
+                            <i class="bi bi-trophy-fill"></i>
+                            <span class="logo-description">Temporada</span>
+                        </a>
+                    </li>
+
+                    <li class="side-item">
+                        <a href="#comunidade">
+                            <i class="bi bi-people-fill"></i>
+                            <span class="logo-description">Comunidade</span>
+                        </a>
+                    </li>
+
+                    <li class="side-item">
+                        <a href="#suporte">
+                            <i class="bi bi-question-circle-fill"></i>
+                            <span class="logo-description">Suporte</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <button id="open_btn">
+                    <i id="open_btn_icon" class="bi bi-chevron-right"></i>
+                </button>
+            </div>
         </nav>
+    </aside>
+
+    <div class="todoConteudo">
+        <header>
+            <div id="hLinks">
+                <a class="hLinks" href="./about.html">SOBRE NÓS</a>
+                <a class="hLinks" href="">PARA EMPRESAS</a>
+                <a class="hLinks" href="./login.html">LOGIN</a>
+            </div>
+        </header>
+
+        <main> <!--início principal-->
+            <div id="titulo">
+                <img src="./assets/IMG/logo.png" alt="">
+                <h1>Sobre nós</h1>
+            </div>
+            <section id="texto">
+
+                <div class="container" id="container1">
+                    <p>Somos uma empresa formada por cinco jovens, que diante de pesquisas sobre a evasão
+                        escolar e a desigualdade social no país decidimos juntar nossos conhecimentos e criar
+                        o Aprenda+, com objetivo de melhorar a qualidade de ensino de forma interativa,
+                        personalizada e prática.</p>
+                </div>
+
+                <div class="container" id="container2">
+                    <p>Somos uma empresa formada por cinco jovens, que diante de pesquisas sobre a evasão
+                        escolar e a desigualdade social no país decidimos juntar nossos conhecimentos e criar
+                        o Aprenda+, com objetivo de melhorar a qualidade de ensino de forma interativa,
+                        personalizada e prática.</p>
+                </div>
+
+                <div class="container" id="container3">
+                    <p>Somos uma empresa formada por cinco jovens, que diante de pesquisas sobre a evasão
+                        escolar e a desigualdade social no país decidimos juntar nossos conhecimentos e criar
+                        o Aprenda+, com objetivo de melhorar a qualidade de ensino de forma interativa,
+                        personalizada e prática.</p>
+                </div>
+            </section>
+        </main> <!--final principal-->
+
+        <footer>
+            <div class="fColunas">
+                <a href="./index.html"><img src="./assets/IMG/logo.png" alt=""></a>
+                <p>"A educação é o nosso passaporte para o futuro, pois o amanhã pertence às pessoas que se preparam
+                    hoje."</p>
+                <p>-Malcolm X</p>
+            </div>
+
+            <div class="fColunas">
+                <h4>Mapa do site</h2>
+                    <a class="fLink" href="./about.html">Sobre nós</a>
+                    <a class="fLink" href="">Para empresas</a>
+                    <a class="fLink" href="">Comunidade</a>
+            </div>
+
+            <div class="fColunas">
+                <h4>Colaboradores</h2>
+                    <a class="fLink"
+                        href="https://descomplica.com.br/vestibulares/enem/?&msclkid=b5237bea7e0c1aa7300b1d86ee2af000&utm_source=bing&utm_medium=cpc&utm_campaign=bing-psq-sb_uee_performance_gwt-paid-media_meio_conversao_ongoing_venda_exata_marktech&utm_term=descomplica&utm_content=institucional_exata">Descomplica</a>
+                    <a class="fLink" href="https://www.todamateria.com.br/">Toda Matéria</a>
+                    <a class="fLink" href="https://brasilescola.uol.com.br/">Brasil Escola</a>
+            </div>
+        </footer>
     </div>
 
-    <header>
-        <div id="hLinks">
-            <a class="hLinks" href="./about.html">SOBRE NÓS</a>
-            <a class="hLinks" href="">PARA EMPRESAS</a>
-            <a class="hLinks" href="">LOGIN</a>
-        </div>
-    </header>
-
-    <main> <!--início principal-->
-        <div id="titulo">
-            <img src="./assets/IMG/logo.png" alt="">
-            <h1>Sobre nós</h1>
-        </div>
-        <section id="texto">
-
-            <div class="container" id="container1">
-                <p>Somos uma empresa formada por cinco jovens, que diante de pesquisas sobre a evasão
-                    escolar e a desigualdade social no país decidimos juntar nossos conhecimentos e criar
-                    o Aprenda+, com objetivo de melhorar a qualidade de ensino de forma interativa,
-                    personalizada e prática.</p>
-            </div>
-
-            <div class="container" id="container2">
-
-            </div>
-
-            <div class="container" id="container3">
-
-            </div>
-        </section>
-    </main> <!--final principal-->
-
-    <footer>
-        <div class="fColunas">
-            <a href="./index.html"><img src="./assets/IMG/logo.png" alt=""></a>
-            <p>"A educação é o nosso passaporte para o futuro, pois o amanhã pertence às pessoas que se preparam hoje."</p>
-            <p>-Malcolm X</p>
-        </div>
-        
-        <div class="fColunas">
-            <h4>Mapa do site</h2>
-            <a class="fLink" href="./about.html">Sobre nós</a>
-            <a class="fLink" href="">Para empresas</a>
-            <a class="fLink" href="">Comunidade</a>
-        </div>
-
-        <div class="fColunas">
-            <h4>Colaboradores</h2>
-            <a class="fLink" href="https://descomplica.com.br/vestibulares/enem/?&msclkid=b5237bea7e0c1aa7300b1d86ee2af000&utm_source=bing&utm_medium=cpc&utm_campaign=bing-psq-sb_uee_performance_gwt-paid-media_meio_conversao_ongoing_venda_exata_marktech&utm_term=descomplica&utm_content=institucional_exata">Descomplica</a>
-            <a class="fLink" href="https://www.todamateria.com.br/">Toda Matéria</a>
-            <a class="fLink" href="https://brasilescola.uol.com.br/">Brasil Escola</a>
-        </div>
-    </footer>
+    <script src="./assets/JS/about.js"></script>
 </body>
 
 </html>
