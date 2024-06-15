@@ -66,6 +66,10 @@ body{
 }
 /* Fim Sidebar */
 
+/*Começo conteúdo principal*/
+
+/*fim conteúdo principal*/
+
 /*Estilos gerais da header*/
 header{
     background-color: #EDD989;
@@ -102,6 +106,7 @@ footer{
     margin-left: 90px;
     display: flex;
     gap: 50px;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
