@@ -9,159 +9,170 @@
 }
 
 body{
-    display: flex; /*  coloquei para deixar a sidebar sempre no lado esquerdo */
-    flex-direction: column;
     min-height: 100vh;
     background-image: url(../IMG/fundoRoxo.jpg); 
 }
 
-main{
-    flex: 1;
-    padding: 20px;
-    margin-left: 82px; /* Espaço para a sidebar */
-    /* z-index: 1;  */
-    /* padding-left: calc(82px + 20px); Olha a gambiarra p deixar não deixar a sidebar sobrepor */
-}
-
-/*Estilos gerais da header*/
-
-/* FIM HEADER */
-
-
-/* INICIO SIDEBAR */
-#sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* INICIO HEADER */
+.navbar{
     background-color: #EDD989;
-    height: 100%;
-    border-radius: 0px 18px 18px 0px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    transition: all .5s;
-    min-width: 82px;
-    z-index: 2;
 }
 
-#sidebar_content{
-    padding: 12px; 
+.offcanvas-header{
+   background-color: #EDD989;
 }
 
-#logo-sidebar{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 24px;
-}
-
-#logo_icon{
-    width: 60px;
-    height: 50px;
-    object-fit: cover;
-}
-
-#logo-infos{
-    display: flex;
-    flex-direction: column;
-}
-
-#logo-infos span:last-child{
-    color: #6b6b6b;
-    font-size: 12px;
-}
-
-#side_items {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    list-style: none;
-}
-
-.side-item {
-    border-radius: 8px;
-    padding: 14px;
-    cursor: pointer;
-}
-
-.side-item.active {
-    background-color: #512da8;
-}
-
-.side-item:hover:not(.active){
-    background-color:  #e0c556;
-}
-
-.side-item a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.offcanvas-title{
+    background-color: #EDD989;
     color: #0a0a0a;
 }
 
-.side-item.active a {
-    color: #e3e9f7;
+.offcanvas-body{
+    background-color: #EDD989;
 }
 
-.side-item a i {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 20px;
-    height: 20px;
+.offcanvas-body ul li:hover{
+    transform: scale(1.020);
 }
 
-#open_btn{
-    position: absolute;
-    top: 30px;
-    right: -10px;
-    background-color: #f0c000;
-    color: #000;
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    border: none;
-    cursor: pointer;
+.nav-link{
+    color: #0a0a0a;
 }
 
-#open_btn_icon {
-    transition: transform .3s ease;
+#button-header:hover{
+    transform: scale(1.020);
 }
 
-.logo-description{
-    width: 0px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: 14px;
-    transition: width .3s;
-    height: 0px;
+@media (max-width: 390px) {
+    #offcanvasDarkNavbar .offcanvas-title {
+      font-size: 1rem; 
+    }
+  }
+  
+/* FIM HEADER */
+
+/* INICIO MAIN */
+main{
+    position: relative;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-#sidebar.open-sidebar {
-    min-width: 15%;
+h1{
+    padding-top: 5%; /*usei para tirar a distancia do titulo p header*/
 }
 
-#sidebar.open-sidebar .logo-description {
-    width: 180px;
-    height: auto;
+.titulo-estudos {
+    color: #EDD989;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos para o grid */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
+    gap: 20px; 
+  }
+  
+  .card-materia {
+    background-color: #EDD989;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex; /* Usa flexbox para posicionar os elementos dentro do card */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+  }
+  
+  .card-materia i {
+    color: #512da8;
+    margin-bottom: 15px;
+    transition: all 0.5 ease;
+  }
+
+  /* aplicando hover apenas nas 3 primeiras matérias */
+  .grid-container > .card-materia:nth-child(-n+3):hover {
+    background-color: #180553;
+    box-shadow: 10px 10px 10px #EDD989;
+    transform: scale(1.025);
+  }
+  
+  .grid-container > .card-materia:nth-child(-n+3):hover i {
+    color: #EDD989; /* Muda a cor do ícone no hover */
+  }
+  
+  .grid-container > .card-materia:nth-child(-n+3):hover h5 {
+    color: #EDD989; /* Muda a cor do título no hover */
+  }
+  
+  .grid-container > .card-materia:nth-child(-n+3):hover a {
+    background-color: #EDD989; /* Muda a cor de fundo do botão no hover */
+    color: #180553; /* Muda a cor do texto do botão no hover */
+  }
+
+  .card-materia h5 {
+    color: #512da8;
+    margin-bottom: 15px;
+  }
+  
+  .card-materia a {
+    display: inline-block;
+    background-color: #4527a0;
+    color: #EDD989;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 80%; /* Ocupa 80% da largura do card */
+  }
+  
+  .card-materia a:hover {
+    background-color: #311b92;
+  }
+
+.card-materia.inativo {
+  opacity: 0.5; /* Opacidade reduzida para os cards inativos */
 }
 
-#sidebar.open-sidebar .side-item a {
-    justify-content: flex-start;
-    gap: 14px;
+.card-materia.inativo .em-breve {
+  display: block; /* Ocupa toda a largura disponível */
+  background-color: #4527a0; /* Cor de fundo do botão "Em breve" */
+  color: #EDD989;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 15px;
+  cursor: default; /* Cursor padrão (não clicável) */
 }
-/* FIM SIDEBAR */
 
+  @media screen and (max-width: 1183px){
+    h1{
+        padding-top: 10%;
+    }
+  }
 
+  @media screen and (max-width: 569px){
+    h1{
+        padding-top: 20%;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+  }
+  
+/* FIM MAIN */
 
 /* INICIO FOOTER */
 footer{
     position: relative;
     width: 100%;
-    padding-left: calc(82px + 20px); /*novamente a gambiarra p deixar a sidebar no lugar dela*/
-    padding-top: 80%;
+    padding-top: 10%;
 }
 
 .footer-link {
@@ -219,7 +230,7 @@ footer{
 .footer-list{
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 0.85rem;
     list-style: none;
 }
 
@@ -281,7 +292,7 @@ footer{
     font-weight: 100;
 }
 
-@media screen and (max-width: 883px){
+@media screen and (max-width: 1183px){
     #footer_content{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
@@ -291,10 +302,24 @@ footer{
 @media screen and (max-width: 488px){
     #footer_content{
         grid-template-columns: repeat(1, 1fr);
+        text-align: center;
         padding: 3rem 2rem;
     }
+    #footer_social_media{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #footer_subscribe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
 }
-
-
-
 /* FIM FOOTER */
