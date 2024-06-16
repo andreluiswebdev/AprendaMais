@@ -20,7 +20,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     background-color: #EDD989;
-    height: 100vh; /* p ela ficar somente na primeira pg, ou coloco um fixed? */
+    height: 100%; /* p ela ficar somente na primeira pg, ou coloco um fixed? */
     border-radius: 0px 18px 18px 0px;
     position: relative;
     transition: all .5s;
@@ -172,6 +172,7 @@ header{
     background-color: #BBAB6C; /* Cor de fundo ao passar o mouse */
     transform: scale(1.2);
 }
+/*fim header*/
 
 /*início footer*/
 footer{
