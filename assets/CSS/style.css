@@ -5,206 +5,199 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
 }
 
 body{
-    display: flex; /*  coloquei para deixar a sidebar sempre no lado esquerdo */
     min-height: 100vh;
     background-image: url(../IMG/fundoRoxo.jpg); 
-
 }
 
-/* INICIO SIDEBAR */
-#sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+/* INICIO HEADER */
+.navbar{
     background-color: #EDD989;
-    height: 100%; /* p ela ficar somente na primeira pg, ou coloco um fixed? */
-    border-radius: 0px 18px 18px 0px;
-    position: relative;
-    transition: all .5s;
-    min-width: 82px;
 }
 
-#sidebar_content{
-    padding: 12px; 
+.offcanvas-header{
+   background-color: #EDD989;
 }
 
-#logo-sidebar{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 24px;
-}
-
-#logo_icon{
-    width: 60px;
-    height: 50px;
-    object-fit: cover;
-}
-
-#logo-infos{
-    display: flex;
-    flex-direction: column;
-}
-
-#logo-infos span:last-child{
-    color: #6b6b6b;
-    font-size: 12px;
-}
-
-#side_items {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    list-style: none;
-}
-
-.side-item {
-    border-radius: 8px;
-    padding: 14px;
-    cursor: pointer;
-}
-
-.side-item.active {
-    background-color: #512da8;
-}
-
-.side-item:hover:not(.active){
-    background-color:  #e0c556;
-}
-
-.side-item a{
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.offcanvas-title{
+    background-color: #EDD989;
     color: #0a0a0a;
 }
 
-.side-item.active a {
-    color: #e3e9f7;
+.offcanvas-body{
+    background-color: #EDD989;
 }
 
-.side-item a i {
+.offcanvas-body ul li:hover{
+    transform: scale(1.020);
+}
+
+.nav-link{
+    color: #0a0a0a;
+}
+
+#button-header:hover{
+    transform: scale(1.020);
+}
+
+/* FIM HEADER */
+
+/* INICIO FOOTER */
+footer{
+    position: relative;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: #EDD989;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts a{
+   cursor: pointer;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    color: #f8f4f4;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    transition: all 0.4s;
 }
 
-#open_btn{
-    position: absolute;
-    top: 30px;
-    right: -10px;
-    background-color: #f0c000;
-    color: #000;
-    border-radius: 100%;
-    width: 20px;
-    height: 20px;
-    border: none;
-    cursor: pointer;
+#footer_social_media .footer-link i{
+    font-size: 1.25rem;
 }
 
-#open_btn_icon {
-    transition: transform .3s ease;
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
 }
 
-.logo-description{
-    width: 0px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    font-size: 14px;
-    transition: width .3s;
-    height: 0px;
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
 }
 
-#sidebar.open-sidebar {
-    min-width: 15%;
+#facebook{
+    background-color: #4267b3;
 }
 
-#sidebar.open-sidebar .logo-description {
-    width: 150px;
-    height: auto;
+#whatsapp{
+    background-color: #25d366;
 }
 
-#sidebar.open-sidebar .side-item a {
-    justify-content: flex-start;
-    gap: 14px;
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    list-style: none;
 }
-/* FIM SIDEBAR */
 
-.todoConteudo{
+.footer-list .footer-link{
+    color: #0a0a0a;
+    transition: all 0.1s;
+}
+
+.footer-list .footer-link:hover{
+    color: #512da8;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: #0a0a0a;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: #e0c556;
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
     width: 100%;
 }
 
-/*Começo conteúdo principal*/
-
-/*fim conteúdo principal*/
-
-/*Estilos gerais da header*/
-header{
-    background-color: #EDD989;
-    height: 70px;
+#input_group button{
+    background-color: #512da8;
+    border: none;
+    color: #e3e9f7;
+    padding: 0px 1.75rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.2s;
 }
-#hLinks{ /*links da header*/
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+#copyright{
     display: flex;
-    gap: 40px;
-    justify-content: end;
-    align-items: center;
-    padding: 20px;
+    justify-content: center;
+    background-color: #0a0a0a;
+    color: #e3e9f7;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
 }
 
-.hLinks{
-    color: #000000;
-    text-decoration: none;
-    display: block;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    white-space: nowrap;
-    padding: 5px;
+@media screen and (max-width: 1183px){
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 }
 
-.hLinks:hover{
-    background-color: #BBAB6C; /* Cor de fundo ao passar o mouse */
-    transform: scale(1.2);
-}
-/*fim header*/
+@media screen and (max-width: 488px){
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+    #footer_social_media{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #footer_subscribe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-/*início footer*/
-footer{
-    background-color: #EDD989;
-    padding: 30px;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
 }
-
-footer a{
-    color: #000000;
-    text-decoration: none;
-}
-
-footer img{
-    width: 100px;
-}
-
-footer .fColunas{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 200px;
-}
-
-footer .fLink{
-    transition: 0.3s;
-}
-
-footer .fLink:hover{
-    color: rgb(117, 100, 68);
-}
+/* FIM FOOTER */
 /*fim footer*/
