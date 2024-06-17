@@ -251,9 +251,11 @@ body main{
     background-color: rgb(237, 217, 137);
     border-radius: 20px;
     transition: 0.5s;
+    color: rgb(95, 66, 112);
 }
 
 .container:hover{
+    color: rgb(237, 217, 137);
     background-color: rgb(95, 66, 112);
     box-shadow: 5px 5px 50px #EDD989;
 }
@@ -263,11 +265,9 @@ body main{
     font-weight: 700;
     font-style: normal;
     font-size: 23px;
-    color: rgb(95, 66, 112);
     padding: 10px;
     width: 100%;
     height: 100%;
-    transition: 0.5s;
 }
 
 .container ol{
@@ -275,21 +275,10 @@ body main{
         font-weight: 700;
         font-style: normal;
         font-size: 23px;
-        color: rgb(95, 66, 112);
         margin: 10px;
         width: 100%;
         height: 100%;
-        transition: 0.5s;
     }
-
-.container p:hover{
-    color: rgb(237, 217, 137);
-}
-
-.container ol:hover{
-    color: rgb(237, 217, 137);
-    width: 100%;
-}
 
 #container2{
     width: 600px;
