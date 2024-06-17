@@ -200,4 +200,70 @@ footer{
 
 }
 /* FIM FOOTER */
-/*fim footer*/
+
+/*INICIO MAIN*/
+
+body main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 70px;
+    width: 100%;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container1{
+    width: 800px;
+}
+
+#container2{
+    width: 800px;
+}
+
+#container3{
+    width: 800px;
+}
+
+#container4{
+    width: 800px;
+}
+
+.container{
+    background-color: rgb(237, 217, 137);
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 20px;
+    width: 500px;
+    color: rgb(95, 66, 112);
+}
+
+.container p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.container:hover{
+    color: rgb(237, 217, 137);
+    background-color: rgb(95, 66, 112);
+    box-shadow: 5px 5px 50px #EDD989;
+}
+
+.container a{
+    color: inherit;
+}
+
+.container img{
+    width: 400px;
+    margin: 10px;
+}
+
+/*FIM MAIN*/
