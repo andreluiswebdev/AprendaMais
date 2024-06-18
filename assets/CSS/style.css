@@ -225,10 +225,15 @@ body main{
 
 #container2{
     width: 800px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #container3{
     width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 #container4{
