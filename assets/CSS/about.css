@@ -250,7 +250,7 @@ body main{
 .container {
     background-color: rgb(237, 217, 137);
     border-radius: 20px;
-    transition: 0.5s;
+    transition: 0.5s ease;
     color: rgb(95, 66, 112);
 }
 
@@ -290,22 +290,20 @@ body main{
         font-weight: 700;
         font-style: normal;
         font-size: 14px;
-        color: rgb(95, 66, 112);
         padding: 10px;
         width: 100%;
         height: 100%;
-        transition: 0.5s;
+        /* transition: 0.2s; */
     }
     .container ol{
         font-family: "Poppins", sans-serif;
         font-weight: 700;
         font-style: normal;
         font-size: 14px;
-        color: rgb(95, 66, 112);
         margin: 10px;
         width: 100%;
         height: 100%;
-        transition: 0.5s;
+        /* transition: 0.2s; */
     }
     .container{
         max-width: 250px;
