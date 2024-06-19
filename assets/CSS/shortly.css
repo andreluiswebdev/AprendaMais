@@ -45,74 +45,29 @@ body{
 
 /* FIM HEADER */
 
-/*INICIO MAIN*/
-
-body main{
+/*INÍCIO MAIN*/
+main{
+    height: 80vh;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    gap: 70px;
-    width: 100%;
-}
-
-.conteudo{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#container1{
-    width: 800px;
-}
-
-#container2{
-    width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#container3{
-    width: 800px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-#container4{
-    width: 800px;
 }
 
 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(237, 217, 137);
+    width: 80%;
+    height: 50%;
+    transition: 0.5s ease;
     border-radius: 20px;
-    transition: 0.5s;
-    padding: 20px;
-    width: 500px;
-    color: rgb(95, 66, 112);
-}
-
-.container p{
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 23px;
 }
 
 .container:hover{
     color: rgb(237, 217, 137);
     background-color: rgb(95, 66, 112);
     box-shadow: 5px 5px 50px #EDD989;
-}
-
-.container a{
-    color: inherit;
-}
-
-.container img{
-    width: 400px;
-    margin: 10px;
 }
 
 /*FIM MAIN*/
@@ -272,4 +227,3 @@ footer{
 
 }
 /* FIM FOOTER */
-
