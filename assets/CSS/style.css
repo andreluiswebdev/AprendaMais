@@ -47,10 +47,49 @@ body{
 
 /*INICIO MAIN*/
 main{
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
-  
+.card:hover{
+    background-color: #180553;
+    color: #EDD989;
+    box-shadow: 10px 10px 10px #EDD989;
+    transform: scale(1.025);
+}
+
+.card:hover button{
+    background-color: #EDD989;
+    color: #7f37c9;
+    transform: scale(1.1);
+}
+
+.card:hover i{
+    color: #EDD989;
+}
+
+.card:hover #d20-container img{
+    background-image: url("assets/IMG/d20-hover.webp"); /* Imagem no hover */
+  }
+
+
+
+
+
+.btnn{
+    background-color: #7f37c9;
+    color: #EDD989;
+    padding: 10px;
+    border-radius: 5px  ;
+    transition: all 0.6 ease;
+}
+
+i{
+    color: #512da8;
+}
+
+
+
+
 
 /* estilo do dado */
 
@@ -70,7 +109,10 @@ main{
     0% { transform: rotateX(0deg) rotateY(0deg); }
     100% { transform: rotateX(360deg) rotateY(360deg); }
   }
-  
+
+  #d20-container:hover {
+    background-image: url("assets/IMG/d20-hover.webp"); /* Imagem no hover */
+  }
 
 /*FIM MAIN*/
 
