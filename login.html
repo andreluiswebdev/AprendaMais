@@ -15,31 +15,33 @@
     <div class="container" id="container">
         <div class="form-container sign-up">
             <form action="./index.html">
-                <h1></h1>
+                <h1>Criar Registro</h1>
                 <input type="text" placeholder="Nome">
                 <input type="email" placeholder="Email">
-                <input type="password" placeholder="Senha">
-                <button>Sign Up</button>
+                <input type="password" placeholder="Senha" class="password">
+                <div id="icon1" onclick="showHide()"></div>
+                <button>Criar Registro</button>
             </form>
         </div>
         <div class="form-container sign-in">
             <form action="./index.html">
-                <h1>INICIAR SESSÃO</h1>
+                <h1>Iniciar Sessão</h1>
                 <input type="email" placeholder="Email">
-                <input type="senha" placeholder="Senha">
-                <button>ENTRAR</button>
+                <input type="password" placeholder="Senha" class="password">
+                <div id="icon2" onclick="showHide2()"></div>
+                <button>Entrar</button>
             </form>
         </div>
         <div class="toggle-container">
             <div class="toggle">
                 <div class="toggle-panel toggle-left">
                     <h1>Bem vindo de volta!</h1>
-                    <button class="hidden" id="login">Sign In</button>
+                    <button class="hidden" id="login">Entrar</button>
                 </div>
                 <div class="toggle-panel toggle-right">
                     <h1>CRIAR SESSÃO</h1>
                     <p>Resgistre os seus detalhes para estudar conosco</p>
-                    <button class="hidden" id="register">registrar</button>
+                    <button class="hidden" id="register">Registrar</button>
                 </div>
             </div>
         </div>
