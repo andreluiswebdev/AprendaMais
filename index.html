@@ -14,6 +14,7 @@
         <style>
             .card{
                 background-color: #EDD989;
+                margin: 1.5rem;
             }
 
             .card button{
@@ -86,75 +87,70 @@
 
 
     <main>
-        <div class="col-sm-6 mb-3 mx-2">
-            <div class="card">
-              <div class="row g-0">
-                <div class="col-md-6">
-                  <img src="assets/IMG/cronicas-1.jpg" class="card-img" alt="Imagem 1">
-                </div>
-                <div class="col-md-6">
-                  <img src="assets/IMG/cronicas-2.jpg" class="card-img" alt="Imagem 2">
-                </div>
-              </div>
-              <div class="card-body">
-                <h3 class="card-title fs-1">Descubra “Crônicas de Eldoria”!</h3>
-                <p class="card-text fs-2">Uma aventura épica espera por você em nossos postos de coleta!! Mergulhe na ascensão dos heróis e transforme sua maneira de aprender.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <small class="text-muted">
-                    <div id="d20-container">
-                      <img src="assets/IMG/d20.webp" alt="D20" id="d20">
-                    </div>
-                  </small>
-                  <a href="">
-                    <button class="btn btn-lg btn-primary">SAIBA MAIS</button>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- primeiro card -->
-
-          <!-- segundo card -->
-          <div class="container mx-0"> 
+        <div class="container">
             <div class="row">
-              <div class="col-sm-4"> 
-                <div class="card h-100"> 
-                  <img src="assets/IMG/desafio-enem.png" class="card-img-top" alt="Descrição da imagem">
-                  <div class="d-flex justify-content-center align-items-center mb-3">
-                    <a href="">
-                      <button class="btn btn-lg btn-primary w-100">COMECE AGORA</button>
-                    </a>
-                  </div>
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/IMG/cronicas-1.jpg" class="card-img-top img-fluid" alt="Imagem 1">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <h3 class="card-title pb-3">
+                                Crônicas de Eldoria: Uma Jornada Épica Para Te Inspirar!</h3>
+                            <p class="card-text pb-3">Uma aventura épica espera por você em nossos postos de coleta!! Mergulhe na ascensão dos heróis e transforme sua maneira de aprender.</p>
+                            <div class="d-flex flex-column align-items-center pb-3">
+                                <div id="d20-container">
+                                    <img src="assets/IMG/d20.webp" alt="D20" id="d20" class="imagem-principal">
+                                </div>
+                            </div>
+                            <a href="" class="mt-auto">
+                                <button class="btnn">SAIBA MAIS</button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
         
-              <div class="col-sm-8"> 
-                <div class="card h-100">
-                  <div class="card-body d-flex flex-column justify-content-center"> 
-                    <div class="d-flex align-items-center">
-                      <i class="fa-solid fa-magnifying-glass fa-2x text-primary"></i>
-                      <div class="ms-3">
-                        <h5 class="card-title text-primary">VOCÊ SABE ESTRUTURAR UMA REDAÇÃO?</h5>
-                        <p class="card-text">Descubra por onde começar e receba dicas práticas!</p>
-                      </div>
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/IMG/duolingo-logo.png" class="card-img-top img-fluid" alt="Duolingo Logo">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <h3 class="card-title pb-3">Quer estudar inglês mas não sabe como começar?</h3>
+                            <p class="card-text">O Duolingo te ajuda a alcançar a fluência com lições rápidas e personalizadas. Baixe agora e comece sua jornada!</p>
+                            <a href="" class="mt-auto">
+                                <button class="btnn">SAIBA MAIS</button>
+                            </a>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-center mt-auto"> 
-                      <a href="" class="btn btn-primary">SAIBA MAIS</a>
-                    </div>
-                  </div>
                 </div>
-              </div>
+        
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <div class="card h-100">
+                        <img src="assets/IMG/desafio-enem.png" class="card-img-top img-fluid" alt="Desafio Enem">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <h3 class="card-title pb-3">ENEM: Sua jornada para o sucesso começa aqui!</h3>
+                            <p class="card-text">Prepare-se para o ENEM com um método que te leva do zero à aprovação. Domine o conteúdo, supere os desafios e conquiste seu futuro.</p>
+                            <a href="" class="mt-auto">
+                                <button class="btnn">SAIBA MAIS</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-sm-6 col-md-3 mb-3">
+                    <div class="card h-100">
+                        <div class="card-img-top d-flex align-items-center justify-content-center">
+                            <i class="fa-solid fa-magnifying-glass fa-10x"></i>
+                        </div>
+                        <div class="card-body d-flex flex-column align-items-center text-center">
+                            <h3 class="card-title pb-3">VOCÊ SABE ESTRUTURAR UMA REDAÇÃO NOTA MIL?</h3>
+                            <p class="card-text">A redação é uma das provas mais importantes do ENEM e pode ser decisiva para sua aprovação. Mas não se preocupe! Descubra como planejar, organizar suas ideias e escrever uma redação impecável que te levará à nota máxima.</p>
+                            <a href="" class="mt-auto">
+                                <button class="btnn">SAIBA MAIS</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-          <!-- terceiro card -->
-
-
-
-          
-          
-          
-          
+        
           
 
  
