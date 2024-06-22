@@ -135,6 +135,17 @@ h1{
     background-color: #311b92;
   }
 
+  .botao{
+    display: inline-block;
+    background-color: #4527a0;
+    color: #EDD989;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 80%;
+    border: none;
+  }
+
 .card-materia.inativo {
   opacity: 0.5; /* Opacidade reduzida para os cards inativos */
 }
