@@ -71,10 +71,6 @@ main{
     background-image: url("assets/IMG/d20-hover.webp"); /* Imagem no hover */
   }
 
-
-
-
-
 .btnn{
     background-color: #7f37c9;
     color: #EDD989;
@@ -83,8 +79,12 @@ main{
     transition: all 0.6 ease;
 }
 
-i{
+.container i{
     color: #512da8;
+}
+
+.card:hover img{
+    filter: brightness(120%);
 }
 
 
@@ -94,8 +94,8 @@ i{
 /* estilo do dado */
 
 #d20-container {
-    width: 100px; /* Ajuste conforme necessário */
-    height: 100px;
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px;
     perspective: 1000px; /* Cria a perspectiva para o efeito 3D */
   }
   
@@ -113,6 +113,25 @@ i{
   #d20-container:hover {
     background-image: url("assets/IMG/d20-hover.webp"); /* Imagem no hover */
   }
+  /* fim estilo dado */
+
+  /* estilo trofeu */
+  #trofeuimg {
+    animation: swing 0.5s infinite ease-in-out alternate;
+    transform-origin: top center;
+  }
+  
+  @keyframes swing {
+    0% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  
+  /* fim estilo trofeu */
 
 /*FIM MAIN*/
 
@@ -270,5 +289,4 @@ footer{
     }
 
 }
-/* FIM FOOTER */
-
+/* FIM FOOTER */
