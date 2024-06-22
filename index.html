@@ -86,15 +86,15 @@
 
 
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-3 mb-3">
+        <div class="container-fluid">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-5">
                     <div class="card h-100">
-                        <img src="assets/IMG/cronicas-1.jpg" class="card-img-top img-fluid" alt="Imagem 1">
+                        <img src="assets/IMG/imglivro.jpeg" class="card-img-top img-fluid" alt="Imagem 1">
                         <div class="card-body d-flex flex-column align-items-center text-center">
-                            <h3 class="card-title pb-3">
+                            <h3 class="card-title pb-3 text-wrap">
                                 Crônicas de Eldoria: Uma Jornada Épica Para Te Inspirar!</h3>
-                            <p class="card-text pb-3">Uma aventura épica espera por você em nossos postos de coleta!! Mergulhe na ascensão dos heróis e transforme sua maneira de aprender.</p>
+                            <p class="card-text pb-0 text-wrap mx-3 mx-sm-3 mx-md-3 mx-lg-3 mx-xl-3">Uma aventura épica espera por você em nossos postos de coleta!! Mergulhe na ascensão dos heróis e transforme sua maneira de aprender.</p>
                             <div class="d-flex flex-column align-items-center pb-3">
                                 <div id="d20-container">
                                     <img src="assets/IMG/Design_sem_nome__1_-removebg-preview.png" alt="D20" id="d20" class="imagem-principal">
@@ -107,12 +107,12 @@
                     </div>
                 </div>
         
-                <div class="col-sm-6 col-md-3 mb-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-5">
                     <div class="card h-100">
                         <img src="assets/IMG/duolingo-logo.png" class="card-img-top img-fluid" alt="Duolingo Logo">
                         <div class="card-body d-flex flex-column align-items-center text-center">
-                            <h3 class="card-title pb-3">Quer estudar inglês mas não sabe como começar?</h3>
-                            <p class="card-text">O Duolingo te ajuda a alcançar a fluência com lições rápidas e personalizadas. Baixe agora e comece sua jornada!</p>
+                            <h3 class="card-title pb-3 text-wrap">Quer estudar inglês mas não sabe como começar?</h3>
+                            <p class="card-text text-wrap">O Duolingo te ajuda a alcançar a fluência com lições rápidas e personalizadas. Baixe agora e comece sua jornada!</p>
                             <div class="d-flex flex-column align-items-center pt-5">
                                 <div>
                                     <img src="assets/IMG/gif_ofensiva_duo.gif" alt="GIF de foguinho do Duolingo" style="width: 100px">
@@ -125,12 +125,12 @@
                     </div>
                 </div>
         
-                <div class="col-sm-6 col-md-3 mb-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-5">
                     <div class="card h-100">
                         <img src="assets/IMG/desafio-enem.png" class="card-img-top img-fluid" alt="Desafio Enem">
                         <div class="card-body d-flex flex-column align-items-center text-center">
-                            <h3 class="card-title pb-3">ENEM: Sua jornada para o sucesso começa aqui!</h3>
-                            <p class="card-text">Prepare-se para o ENEM com um método que te leva do zero à aprovação. Domine o conteúdo, supere os desafios e conquiste seu futuro.</p>
+                            <h3 class="card-title pb-3 text-wrap">ENEM: Sua jornada para o sucesso começa aqui!</h3>
+                            <p class="card-text text-wrap">Prepare-se para o ENEM com um método que te leva do zero à aprovação. Domine o conteúdo, supere os desafios e conquiste seu futuro.</p>
                             <div class="d-flex flex-column align-items-center pt-5">
                                 <div>
                                     <img src="assets/IMG/trofeu-roxo-amarelo.png" id="trofeuimg" alt="Trofeuimg" style="width: 100px">
@@ -143,14 +143,17 @@
                     </div>
                 </div>
         
-                <div class="col-sm-6 col-md-3 mb-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 pt-5">
                     <div class="card h-100">
-                        <div class="card-img-top d-flex align-items-center justify-content-center">
-                            <i class="fa-solid fa-magnifying-glass fa-10x"></i>
-                        </div>
+                            <img src="assets/IMG/logofuvest.png" class="card-img-top img-fluid" alt="imagem fuvest">
                         <div class="card-body d-flex flex-column align-items-center text-center">
-                            <h3 class="card-title pb-3">VOCÊ SABE ESTRUTURAR UMA REDAÇÃO NOTA MIL?</h3>
-                            <p class="card-text">A redação é uma das provas mais importantes do ENEM e pode ser decisiva para sua aprovação. Mas não se preocupe! Descubra como planejar, organizar suas ideias e escrever uma redação impecável que te levará à nota máxima.</p>
+                            <h3 class="card-title pb-3 text-wrap">FUVEST: Redação nota máxima, você consegue!</h3>
+                            <p class="card-text text-wrap">A redação é uma das provas mais importantes do ENEM e pode ser decisiva para sua aprovação. Mas não se preocupe! Descubra como planejar uma redação impecável. </p>
+                            <div class="d-flex flex-column align-items-center pt-5">
+                                <div>
+                                    <img src="assets/IMG/redacao.gif" alt="redacaoGif" style="width: 100px">
+                                </div>
+                            </div>
                             <a href="" class="mt-auto">
                                 <button class="btnn">SAIBA MAIS</button>
                             </a>
@@ -159,18 +162,13 @@
                 </div>
             </div>
         </div>
-        
-          
-
- 
-
     </main>
 
 
 
 
     <!-- INICIO FOOTER -->
-    <footer>
+    <footer class="pt-5">
         <div id="footer_content">
             <div id="footer_contacts">
                 <a href="index.html"><img src="assets/IMG/logo.png" alt="Logo Aprenda+" width="60px"
