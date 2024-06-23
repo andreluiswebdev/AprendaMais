@@ -175,7 +175,7 @@ main h2{
 }
 
 .container .card img:hover{
-    filter: saturate(120%);
+    filter: saturate(150%);
 }
 
 .container .card .btn:hover{
