@@ -19,7 +19,7 @@ body{
 .hidden {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 1.5s;
+    transition: all 1s;
   }
 
   .reveal {
@@ -32,7 +32,7 @@ body{
 header h1{
     padding-top: 100px;
     font-size: 3rem; 
-    color: #0a0a0a;
+    color: #180553;
     text-align: center;
     font-weight: bold;
     margin-bottom: 30px;
@@ -58,7 +58,7 @@ header h1{
 }
 
 #container-blocos h2{
-    font-size: 2.3rem; 
+    font-size: 2.0rem; 
     color: #0a0a0a;
     text-align: center;
     font-weight: bold;
@@ -141,11 +141,65 @@ header h1{
 
 
 
+/* INICIO MAIN */
+
+main{
+    padding-top: 7%;
+    background-color: #180553;
+    padding-bottom: 20%;
+}
+
+main h1{
+    padding-bottom: 5%;
+    font-size: 3rem; 
+    color: #EDD989;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: reveal 1s ease-in-out;
+  }
+
+
+main h2{
+    font-size: 2.0rem; 
+    color: #180553;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.container .card{
+    background-color: #EDD989;
+}
+
+.container .card img:hover{
+    filter: saturate(120%);
+}
+
+.container .card .btn:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 770px) {
+    .container .card{
+      margin-top: 5%;
+    }
+  }
+
+
+/* FIM MAIN */
+
+
+
+
+
 /* INICIO FOOTER */
 footer{
     position: relative;
     width: 100%;
-    padding-top: 10%;
+   
 }
 
 .footer-link {

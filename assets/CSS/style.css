@@ -115,7 +115,7 @@ main{
 .hidden {
     opacity: 0;
     transform: translateY(20px);
-    transition: all 1.5s;
+    transition: all 1s;
   }
 
   .reveal {
@@ -214,10 +214,6 @@ main h1{
     }
   }
   /* fim estilo trofeu */
-
-  @media screen and (max-width: 566x){
-
-    }
 /*FIM MAIN*/
 
 
