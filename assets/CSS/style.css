@@ -90,6 +90,12 @@ body{
 #button-header:hover{
     transform: scale(1.020);
 }
+
+@media (max-width: 390px) {
+    #offcanvasDarkNavbar .offcanvas-title {
+      font-size: 1rem; 
+    }
+  }
 /* FIM NAVBAR */
 
 /* FIM HEADER */
