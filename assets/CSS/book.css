@@ -14,50 +14,86 @@ body{
 }
 
 /* INICIO HEADER */
-.intro {
-    background-color: #180553;
-    color: white;
-    padding: 20px 0; 
+
+/*  revelar página com o scroll */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1.5s;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  /* fim  revelar página com o scroll */
+  
+
+header h1{
     padding-top: 100px;
-}
-
-.intro h1 {
-    font-size: 2.5rem; 
-    margin-bottom: 20px;
-}
-
-.intro a {
-    text-decoration: none; /* Remove a decoração dos links */
-}
-
-.intro button:hover{
-    transform: scale(1.065);
-}
-
-/* fazendo os icones chacoalhar */
-.intro i:hover {
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
+    font-size: 3rem; 
+    color: #0a0a0a;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: reveal 1s ease-in-out;
   }
 
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
-  /* fim icones chacoalhando */
-
-#container-home{
-    margin-bottom: 13%;
+  
+/* INICIO BLOCOS */
+#container-blocos{
+    padding-top: 0;
+    background-color: #EDD989;
 }
+
+#container-blocos h2{
+    font-size: 2.3rem; 
+    color: #0a0a0a;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#container-blocos p{
+    font-size: 1.0rem;
+    color: #0a0a0a;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#primeiroBloco{
+    padding-top: 5%;
+    margin-bottom: 30%;
+}
+
+#segundoBloco{
+    margin-bottom: 30%;
+}
+
+#terceiroBloco{
+    margin-bottom: 30%;
+}
+
+#quartoBloco{
+    padding-bottom: 20%;
+    margin-bottom: 0px;
+
+}
+/* FIM BLOCOS */
 
 
 
@@ -97,174 +133,9 @@ body{
       font-size: 1rem; 
     }
   }
-/* FIM NAVBAR */
-
-/* FIM HEADER */
-
-
-
-
-/*INICIO MAIN*/
-main{
-    padding-top: 2%;
-    background-color: #EDD989;
-    padding-bottom: 5%;
-}
-
-/*  revelar página com o scroll */
-.hidden {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 1.5s;
-  }
-
-  .reveal {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-  /* fim  revelar página com o scroll */
+  /* FIM NAVBAR */
   
-
-main h1{
-    padding-top: 3%;
-    font-size: 3rem; 
-    color: #180553;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    animation: reveal 3s ease-in-out;
-}
-
-@keyframes reveal {
-    0% {
-      opacity: 0;
-      transform: translateX(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }  
-
-.card .card-body{
-    background-color: #180553;
-    color: #EDD989;
-}
-
-.card button{
-    background-color: #EDD989;
-    color: #180553;
-    padding: 10px;
-    border-radius: 5px  ;
-    transition: all 0.6 ease;
-    font-weight: 600;
-}
-
-
-.card:hover{
-    box-shadow: 10px 10px 10px #180553;
-    transform: scale(1.025);
-}
-
-.card:hover button{
-    transform: scale(1.1);
-}
-
-.card:hover img{
-    filter: brightness(120%);
-}
-
-/* estilo do dado */
-
-#d20-container {
-    width: 150px; /* Ajuste conforme necessário */
-    height: 150px;
-    perspective: 1000px; /* Cria a perspectiva para o efeito 3D */
-  }
-  
-  #d20 {
-    width: 100%;
-    height: 100%;
-    animation: girarDado 5s infinite linear; /* Animação de rotação */
-  }
-  
-  @keyframes girarDado {
-    0% { transform: rotateX(0deg) rotateY(0deg); }
-    100% { transform: rotateX(360deg) rotateY(360deg); }
-  }
-
-  #d20-container:hover {
-    background-image: url("assets/IMG/d20-hover.webp"); /* Imagem no hover */
-  }
-  /* fim estilo dado */
-
-  /* estilo trofeu */
-  #trofeuimg {
-    animation: swing 0.5s infinite ease-in-out alternate;
-    transform-origin: top center;
-  }
-  
-  @keyframes swing {
-    0% {
-      transform: rotate(-10deg);
-    }
-    100% {
-      transform: rotate(10deg);
-    }
-  }
-  /* fim estilo trofeu */
-
-  @media screen and (max-width: 566x){
-
-    }
-/*FIM MAIN*/
-
-
-
-/* INICIO BLOCOS */
-#container-blocos{
-    background-color: #180553;
-}
-
-#container-blocos h2{
-    font-size: 2.3rem; 
-    color: #EDD989;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-#container-blocos p{
-    font-size: 1.0rem;
-    color: #EDD989;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 30px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-#primeiroBloco{
-    padding-top: 5%;
-    margin-bottom: 30%;
-}
-
-#segundoBloco{
-    margin-bottom: 30%;
-}
-
-#terceiroBloco{
-    margin-bottom: 30%;
-}
-
-#quartoBloco{
-    padding-bottom: 20%;
-    margin-bottom: 0px;
-
-}
-/* FIM BLOCOS */
-
+/* FIM HEADER */
 
 
 
@@ -274,6 +145,7 @@ main h1{
 footer{
     position: relative;
     width: 100%;
+    padding-top: 10%;
 }
 
 .footer-link {

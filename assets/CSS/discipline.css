@@ -16,6 +16,7 @@ body{
 /* INICIO HEADER */
 .navbar{
     background-color: #EDD989;
+    border-bottom: 3px solid black;
 }
 
 .offcanvas-header{
