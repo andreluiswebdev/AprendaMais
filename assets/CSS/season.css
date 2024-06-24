@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    display: flex; /*  coloquei para deixar a sidebar sempre no lado esquerdo */
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(../IMG/fundoRoxo.jpg); 
+
+}
+
+.todoConteudo{
+    width: 100%;
+}
+
+/* INICIO HEADER */
+.navbar{
+    background-color: #EDD989;
+}
+
+.offcanvas-header{
+   background-color: #EDD989;
+}
+
+.offcanvas-title{
+    background-color: #EDD989;
+    color: #0a0a0a;
+}
+
+.offcanvas-body{
+    background-color: #EDD989;
+}
+
+.offcanvas-body ul li:hover{
+    transform: scale(1.020);
+}
+
+.nav-link{
+    color: #0a0a0a;
+}
+
+#button-header:hover{
+    transform: scale(1.020);
+}
+
+@media (max-width: 390px) {
+    #offcanvasDarkNavbar .offcanvas-title {
+      font-size: 1rem; /* Ou outro tamanho que você preferir */
+}
+}
+/* FIM HEADER */
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    margin-top: 100px;
+}
+
+.container{
+    background-color: #a877d8;
+    display: grid;
+    grid-template-columns: 50px auto 20% 20%;
+    grid-template-rows: repeat(6, 70px);
+    column-gap: 5px;
+    row-gap: 5px;
+    justify-content: stretch;
+    align-items: center;
+    width: 80%;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+main h1{
+    color: #EDD989;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.primeiraFileira{
+    display: flex;
+    justify-content: center;
+    color: #EDD989;
+    font-size: 25px;
+}
+
+.container div{
+    font-weight: 500;
+}
+
+.segundaFileira{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #512da8;
+    height: 90%;
+    color: #e3e9f7;
+}
+.terceiraFileira{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #512da8;
+    height: 90%;
+    color: #e3e9f7;
+}
+.quartaFileira{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #512da8;
+    height: 90%;
+    color: #e3e9f7;
+}
+.quintaFileira{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #512da8;
+    height: 90%;
+    color: #e3e9f7;
+}
+.sextaFileira{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #512da8;
+    height: 90%;
+    color: #e3e9f7;
+}
+
+
+/* INICIO FOOTER */
+footer{
+    position: relative;
+    width: 100%;
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content{
+    background-color: #EDD989;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts a{
+   cursor: pointer;
+}
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+#footer_social_media .footer-link {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+    color: #f8f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i{
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+}
+
+#instagram{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook{
+    background-color: #4267b3;
+}
+
+#whatsapp{
+    background-color: #25d366;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: #0a0a0a;
+    transition: all 0.1s;
+}
+
+.footer-list .footer-link:hover{
+    color: #512da8;
+}
+
+#footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#footer_subscribe p {
+    color: #0a0a0a;
+}
+
+#input_group {
+    display: flex;
+    align-items: center;
+    background-color: #e0c556;
+    border-radius: 4px;
+}
+
+#input_group input{
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+}
+
+#input_group button{
+    background-color: #512da8;
+    border: none;
+    color: #e3e9f7;
+    padding: 0px 1.75rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#input_group button:hover{
+    opacity: 0.8;
+}
+
+#copyright{
+    display: flex;
+    justify-content: center;
+    background-color: #0a0a0a;
+    color: #e3e9f7;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 1183px){
+    #footer_content{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 488px){
+    #footer_content{
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        padding: 3rem 2rem;
+    }
+    #footer_social_media{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #footer_subscribe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+/* FIM FOOTER */
