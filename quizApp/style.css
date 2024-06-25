@@ -1,0 +1,71 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(./img/image.png);
+}
+
+main{
+    padding: 32px 24px;
+}
+
+main h1{
+    font-size: 48px;
+    font-weight: 900;
+    color: #EDD989;
+}
+
+.assuntos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(6, 6rem);
+}
+
+.assuntos button{
+    border: none;
+    background-color: #EDD989;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    color: #512da8;
+    margin: 12px;
+}
+
+.botao_matematica{
+    cursor: pointer;
+}
+.botao_historia{
+    cursor: pointer;
+}
+.botao_portugues{
+    cursor: pointer;
+}
+    
+span{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.botao_inativo{
+    cursor: default;
+    opacity: 0.5;
+    border: none;
+    background-color: #EDD989;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    border-radius: 12px;
+    color: #512da8;
+    margin: 12px;
+    text-decoration: none;
+}
+
+.botao_inativo a{
+    text-decoration: none;
+}

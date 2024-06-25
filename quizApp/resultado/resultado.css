@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: rgb(157, 119, 179);
+}
+
+header{
+    background-color: #EDD989;
+    padding: 16px 24px;
+    margin-bottom: 16px;
+}
+
+.assunto{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.assunto_icon{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.assunto_icone img{
+    width: 100px;
+}
+
+.assunto_icon h1{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgb(195, 152, 219);
+    padding: 30px;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.pontuacao{
+    display: flex;
+    flex-direction: column;
+}
+.pontuacao div {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo button {
+    padding: 16px;
+    border-radius: 12px;
+    background-color: rgb(120, 71, 148);
+    color: #EDD989;
+    width: 100%;
+    height: 70px;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.5s ease;
+    border:none;
+    cursor: pointer;
+}
+
+@media screen and (max-width:446px){
+    header{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .conteudo{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:390px){
+    .conteudo{
+        width: 200px;
+    }
+}

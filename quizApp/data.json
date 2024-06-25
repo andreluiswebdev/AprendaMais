@@ -1,0 +1,173 @@
+{
+    "quizzes": [
+        {
+            "title": "Matemática",
+            "icon": "./img/matematica.png",
+            "questions": [
+                {
+                    "question":"Em um projeto para a construção de um cinema, os arquitetos estão avaliando a relação entre a quantidade de fileiras e a quantidade de cadeiras em cada fileira. O projeto inicial prevê uma salapara 304 pessoas. No caso de utilizarem 19 fileiras, o número de cadeiras por fileira será:",
+                    "options":[
+                        "14",
+                        "15",
+                        "16",
+                        "13"
+                    ],
+                    "answer":"16"
+                },
+                {
+                    "question": "(Enem 2022) Uma cozinheira produz docinhos especiais por encomenda. Usando uma receita-base de massa, ela prepara uma porção, com a qual produz 50 docinhos maciços de formato esférico, com 2 cm de diâmetro. Um cliente encomenda 150 desses docinhos, mas pede que cada um tenha formato esférico com 4 cm de diâmetro. A cozinheira pretende preparar o número exato de porções da receita-base de massa necessário para produzir os docinhos dessa encomenda.",
+                    "options":[
+                        "2",
+                        "3",
+                        "6",
+                        "24"
+                    ],
+                    "answer":"24"
+                },
+                {
+                    "question": "Enem (2022) Ao escutar à notícia de que um filme recém-lançado arrecadou, no primeiro mês de lançamento, R$ 1,35 bilhão em bilheteria, um estudante escreveu corretamente o número que representa essa quantia, com todos os seus algarismos. O número escrito pelo estudante foi:",
+                    "options":[
+                        "135 000,00",
+                        "1 350 000,00",
+                        "13 500 000,00",
+                        "1 350 000 000,00"
+                    ],
+                    "answer":"1 350 000 000,00"
+                },
+                {
+                    "question": "(Enem/2018) Uma empresa de comunicação tem a tarefa de elaborar um material publicitário de um estaleiro para divulgar um novo navio, equipado com um guindaste de 15 m de altura e uma esteira de 90 m de comprimento. No desenho desse navio, a representação do guindaste deve ter sua altura entre 0,5 cm e 1 cm, enquanto a esteira deve apresentar comprimento superior a 4 cm. Todo o desenho deverá ser feito em uma escala 1 : X. Os valores possíveis para X são, apenas,",
+                    "options":[
+                        "X>1 500",
+                        "X<3 000",
+                        "1 500<X<2 250",
+                        "1 500<X<3 000"
+                    ],
+                    "answer":"1 500<X<2 250"
+                },
+                {
+                    "question": "Uma montadora de automóveis divulgou que oferta a seus clientes mais de 1 000 configurações diferentes de carro, variando o modelo, a motorização, os opcionais e a cor do veículo. Atualmente, ela oferece 7 modelos de carros com 2 tipos de motores: 1.0 e 1.6. Já em relação aos opcionais, existem 3 escolhas possíveis: central multimídia, rodas de liga leve e bancos de couro, podendo o cliente optar por incluir um, dois, três ou nenhum dos opcionais disponíveis. Para ser fiel à divulgação feita, a quantidade mínima de cores que a montadora deverá disponibilizar a seus clientes é",
+                    "options":[
+                        "8",
+                        "9",
+                        "11",
+                        "18"
+                    ],
+                    "answer":"9"
+                }
+            ]
+        },
+        {
+            "title":"História",
+            "icon": "./img/historia.png",
+            "questions": [
+                {
+                    "question":"(Enem/2010) Para o Paraguai, portanto, essa foi uma guerra pela sobrevivência. De todo modo, uma guerra contra dois gigantes estava fadada a ser um teste debilitante e severo para uma economia de base tão estreita. Lopez precisava de uma vitória rápida e, se não conseguisse vencer rapidamente, provavelmente não venceria nunca. A Guerra do Paraguai teve consequências políticas importantes para o Brasil, pois",
+                    "options":[
+                        "representou a afirmação do Exército Brasileiro como um ator político de primeira ordem",
+                        "confirmou a conquista da hegemonia brasileira sobre a Bacia Platina.",
+                        "concretizou a emancipação dos escravos negros.",
+                        "incentivou a adoção de um regime constitucional monárquico."
+                    ],
+                    "answer":"representou a afirmação do Exército Brasileiro como um ator político de primeira ordem"
+                },
+                {
+                    "question": "(Enem/2016) A Lei das Doze Tábuas, de meados do século V a.C., fixou por escrito um velho direito costumeiro. No relativo às dívidas não pagas, o código permitia, em última análise, matar o devedor; ou vendê-lo como escravo do outro lado do Tibre — isto é, fora do território de Roma. A referida lei foi um marco na luta por direitos na Roma Antiga, pois possibilitou que os plebeus:",
+                    "options":[
+                        "modificassem a estrutura agrária assentada no latifúndio.",
+                        "exercessem a prática da escravidão sobre seus devedores..",
+                        "conquistassem a possibilidade de casamento com os patrícios.",
+                        "reivindicassem as mudanças sociais com base no conhecimento das leis."
+                    ],
+                    "answer":"reivindicassem as mudanças sociais com base no conhecimento das leis."
+                },
+                {
+                    "question": "(Enem/2012) É verdade que nas democracias o povo parece fazer o que quer; mas a liberdade política não consiste nisso. Deve-se ter sempre presente em mente o que é independência e o que é liberdade. A liberdade é o direito de fazer tudo o que as leis permitem; se um cidadão pudesse fazer tudo o que elas proíbem, não teria mais liberdade, porque os outros também teriam tal poder. A característica de democracia ressaltada por Montesquieu diz respeito:",
+                    "options":[
+                        "A característica de democracia ressaltada por Montesquieu diz respeito:",
+                        "ao condicionamento da liberdade dos cidadãos à conformidade às leis.",
+                        "à possibilidade de o cidadão participar no poder e, nesse caso, livre da submissão às leis.",
+                        "ao livre-arbítrio do cidadão em relação àquilo que é proibido, desde que ciente das consequências."
+                    ],
+                    "answer":"ao condicionamento da liberdade dos cidadãos à conformidade às leis."
+                },
+                {
+                    "question": "(Enem/2014) As relações do Estado brasileiro com o movimento operário e sindical, bem como as políticas públicas voltadas para as questões sociais durante o primeiro governo da Era Vargas (1930-1945), são temas amplamente estudados pela academia brasileira em seus vários aspectos. São também os temas mais lembrados pela sociedade quando se pensa no legado varguista. Durante o governo de Getúlio Vargas, foram desenvolvidas ações de cunho social, dentre as quais se destaca a:",
+                    "options":[
+                        "disseminação de organizações paramilitares inspiradas nos regimes fascistas europeus.",
+                        "aprovação de normas que buscavam garantir a posse das terras aos pequenos agricultores.",
+                        "criação de um conjunto de leis trabalhistas associadas ao controle das representações sindicais.",
+                        "implementação de um sistema de previdência e seguridade para atender aos trabalhadores rurais."
+                    ],
+                    "answer":"criação de um conjunto de leis trabalhistas associadas ao controle das representações sindicais." 
+                },
+                {
+                    "question":"(Enem/2011) Acompanhando a intenção da burguesia renascentista de ampliar seu domínio sobre a natureza e sobre o espaço geográfico, através da pesquisa científica e da invenção tecnológica, os cientistas também iriam se atirar nessa aventura, tentando conquistar a forma, o movimento, o espaço, a luz, a cor e mesmo a expressão e o sentimento.",
+                    "options":[
+                        "fé e misticismo.", 
+                        "ciência e arte.", 
+                        "cultura e comércio.",
+                        "política e economia."
+                    ],
+                    "answer":"ciência e arte."
+                }
+                
+            ]
+        },
+        {
+            "title": "Português",
+            "icon": "./img/portugues.png",
+            "questions":[
+                {
+                    "question":" “Todo abacate é verde. O incrível Hulk é verde. O incrível Hulk é um abacate.” Todo argumento pode se tornar um sofisma: um raciocínio errado ou inadequado que nos leva a conclusões falsas ou improcedentes. O último parágrafo do texto é um exemplo de sofisma, considerando que, da constatação de que todo abacate é verde, não se pode deduzir que só os abacates têm cor verde. Esse é o tipo de sofisma que adota o seguinte procedimento:",
+                    "options":[
+                        "enumeração incorreta", 
+                        "generalização indevida", 
+                        "representação imprecisa", 
+                        "exemplificação inconsistente"
+                    ],
+                    "answer": "generalização indevida"
+                },
+                {
+                    "question": "A essência da teoria democrática é a supressão de qualquer imposição de classe, fundada no postulado ou na crença de que os conflitos e problemas humanos – econômicos, políticos, ou sociais – são solucionáveis pela educação, isto é, pela cooperação voluntária, mobilizada pela opinião pública esclarecida. Está claro que essa opinião pública terá de ser formada à luz dos melhores conhecimentos existentes e, assim, a pesquisa científica nos campos das ciências naturais e das chamadas ciências sociais deverá se fazer a mais ampla, a mais vigorosa, a mais livre, e a difusão desses conhecimentos, a mais completa, a mais imparcial e em termos que os tornem acessíveis a todos. No trecho “chamadas ciências sociais”, o emprego do termo “chamadas” indica que o autor:",
+                    "options":[
+                        "vê, nas “ciências sociais”.", 
+                        "considera utópicos os objetivos dessas ciências.", 
+                        "prefere a denominação “teoria social”", 
+                        "utiliza a denominação “ciências sociais”."
+                    ],
+                    "answer":"utiliza com reserva a denominação “ciências sociais”."
+                },
+                {
+                    "question": "(...) Da garrafa estilhaçada, no ladrilho já sereno escorre uma coisa espessa que é leite, sangue... não sei. Por entre objetos confusos, mal redimidos da noite, duas cores se procuram, suavemente se tocam, amorosamente se enlaçam, formando um terceiro tom a que chamamos aurora. No fragmento anterior, Carlos Drummond de Andrade constrói, poeticamente, a aurora. O que permite visualizar este momento do dia corresponde:",
+                    "options":[
+                        "a objetos confusos mal redimido da noite.", 
+                        "à garrafa estilhaçada e ao ladrilho sereno.", 
+                        "à aproximação suave de dois corpos.", 
+                        "ao enlace amoroso de duas cores."
+                    ],
+                    "answer":"ao enlace amoroso de duas cores."
+                },
+                {
+                    "question":"Raskolnikov tinha uma teoria sobre sobre os homens superiores. Ele acreditava que os homens superiores eram aqueles que tinha o de cometer crimesem nome de uma causa causa maior. Raskolnikov acreditava que ele era um homem superior. Ele acreditava que tinha o direito de matar a velha avarenta para ajudar os pobres[...] O texto apresentado exemplifica a construção de um anti-heroi. Dentre as caracteristicas desse tipo de personagem, relacionado com a descrição de Raskolnikov, é evidente que ele é",
+                    "options":[
+                        "alegre e determinado, busca realizar os seus feitos se preocupando com os valores.", 
+                        "inpulsivo, age sem se questionar sobre as consequências dos atos.", 
+                        "desprendido de valores morais, agindo sem pensar nas atitudes.", 
+                        "complexo e ambiguo, demonstrando desejos e valores."
+                    ],
+                    "answer":"complexo e ambiguo, demonstrando desejos e valores."
+                },
+                {
+                    "question":"Indique a alternativa que contém a forma afirmativa de “Não corras!”, “Não grites!”, “Não partas!”.",
+                    "options":[
+                        "Corra!, Grite!, Parta!", 
+                        "Corre!, Grite!, Parte!", 
+                        "Corre!, Grita!, Parte!", 
+                        "Corra!, Grita!, Parte!"
+                    ],
+                    "answer":"Corre!, Grita!, Parte!"
+                }
+            ]
+        }
+    ]
+}
