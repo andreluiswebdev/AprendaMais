@@ -135,6 +135,15 @@ main h1{
     color: #e3e9f7;
 }
 
+@media (max-width: 450px){
+    .primeiraFileira{
+        font-size: 1rem;
+    }
+    #item-7{
+        text-wrap: wrap;
+    }
+}
+
 
 /* INICIO FOOTER */
 footer{

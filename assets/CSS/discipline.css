@@ -80,7 +80,6 @@ h1{
   
   .card-materia {
     background-color: #EDD989;
-    text-decoration: none;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -134,17 +133,6 @@ h1{
   
   .card-materia a:hover {
     background-color: #311b92;
-  }
-
-  .botao{
-    display: inline-block;
-    background-color: #4527a0;
-    color: #EDD989;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    width: 80%;
-    border: none;
   }
 
 .card-materia.inativo {
