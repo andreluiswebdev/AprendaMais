@@ -64,6 +64,7 @@ body{
 /* INICIO NAVBAR */
 .navbar{
     background-color: #EDD989;
+    border-bottom: 3px solid black;
 }
 
 .offcanvas-header{
@@ -90,6 +91,12 @@ body{
 #button-header:hover{
     transform: scale(1.020);
 }
+
+@media (max-width: 390px) {
+    #offcanvasDarkNavbar .offcanvas-title {
+      font-size: 1rem; 
+    }
+  }
 /* FIM NAVBAR */
 
 /* FIM HEADER */
@@ -120,6 +127,35 @@ body main{
     width: 800px;
     display: flex;
     flex-wrap: wrap;
+main{
+    padding-top: 2%;
+    background-color: #EDD989;
+    padding-bottom: 5%;
+}
+
+/*  revelar página com o scroll */
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  /* fim  revelar página com o scroll */
+  
+
+main h1{
+    padding-top: 3%;
+    font-size: 3rem; 
+    color: #180553;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: reveal 3s ease-in-out;
 }
 
 #container3{
@@ -164,7 +200,96 @@ body main{
     margin: 10px;
 }
 
+/* estilo do dado */
+
+#d20-container {
+    width: 150px; /* Ajuste conforme necessário */
+    height: 150px;
+    perspective: 1000px; /* Cria a perspectiva para o efeito 3D */
+  }
+  
+  #d20 {
+    width: 100%;
+    height: 100%;
+    animation: girarDado 5s infinite linear; /* Animação de rotação */
+  }
+  
+  @keyframes girarDado {
+    0% { transform: rotateX(0deg) rotateY(0deg); }
+    100% { transform: rotateX(360deg) rotateY(360deg); }
+  }
+
+  #d20-container:hover {
+    background-image: url("assets/IMG/d20-hover.webp"); /* Imagem no hover */
+  }
+  /* fim estilo dado */
+
+  /* estilo trofeu */
+  #trofeuimg {
+    animation: swing 0.5s infinite ease-in-out alternate;
+    transform-origin: top center;
+  }
+  
+  @keyframes swing {
+    0% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+  /* fim estilo trofeu */
 /*FIM MAIN*/
+
+
+
+/* INICIO BLOCOS */
+#container-blocos{
+    background-color: #180553;
+}
+
+#container-blocos h2{
+    font-size: 2.3rem; 
+    color: #EDD989;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#container-blocos p{
+    font-size: 1.0rem;
+    color: #EDD989;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+#primeiroBloco{
+    padding-top: 5%;
+    margin-bottom: 10%;
+}
+
+#segundoBloco{
+    margin-bottom: 10%;
+}
+
+#terceiroBloco{
+    margin-bottom: 10%;
+}
+
+#quartoBloco{
+    padding-bottom: 10%;
+    margin-bottom: 0px;
+
+}
+/* FIM BLOCOS */
+
+
+
+
+
 
 /* INICIO FOOTER */
 footer{

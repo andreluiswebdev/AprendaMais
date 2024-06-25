@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="assets/CSS/book.css"> <!--LEMBRE-SE DE ALTERAR O LINK-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Crônicas de Eldória - Aprenda+</title>
+</head>
+
+<body>
+    <!-- INICIO HEADER -->
+    <header>
+        <!-- inicio navbar -->
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="assets/IMG/logo.png" alt="Logo" width="60"
+                        height="40" class="d-inline-block align-text-center">
+                    Aprenda Mais
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel"><img src="assets/IMG/logo.png"
+                                alt="Logo" width="60" height="40">Seu futuro começa aqui</h5>
+                        <button type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+                            <li class="nav-item pb-3">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item pb-3">
+                                <a class="nav-link" aria-current="page" href="discipline.html">Disciplinas</a>
+                                <!--coloque "active na página atual"-->
+                            </li>
+                            <li class="nav-item pb-3">
+                                <a class="nav-link" href="#">Temporada</a>
+                            </li>
+                            <li class="nav-item pb-3">
+                                <a class="nav-link" href="#">Comunidade</a>
+                            </li>
+                            <li class="nav-item dropdown pb-3">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Mais
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark pb-3">
+                                    <li><a class="dropdown-item" href="about.html">Sobre nós</a></li>
+                                    <li><a class="dropdown-item" href="#">Para empresas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item  active" href="#">Crônicas de Eldória</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="login.html" id="button-header" class="btn btn-dark" tabindex="-1"
+                            role="button">Entrar</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- fim navbar -->
+
+
+        <!-- INICIO BLOCOS  -->
+        <!-- Primeiro bloco de conteúdo -->
+        <div id="container-blocos" class="container-fluid">
+            <h1>Ganhe um Livro da Aprenda+ e Ajude o Planeta!</h1>
+            <div id="primeiroBloco" class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="text-wrap">Desvende Novos Mundos com a Leitura</h2>
+                        <p>Explore universos desconhecidos, viva aventuras emocionantes e aprenda com cada página. A
+                            leitura é a chave para abrir as portas da imaginação e do conhecimento.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/IMG/primeiroBlocoBook.gif" alt="Animação de um livro abrindo"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento -->
+            <div class="my-5"></div>
+
+            <!-- Segundo bloco de conteúdo -->
+            <div id="segundoBloco" class="container hidden">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <h2 class="text-wrap">Aventura e Conhecimento em Suas Mãos</h2>
+                        <p>Nosso livro autoral é uma jornada emocionante pelo mundo da leitura. Com personagens
+                            cativantes e uma narrativa envolvente, ele mostra que aprender pode ser divertido!</p>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <img src="assets/IMG/segundoBlocoBook.gif" alt="Animação de um mago fazendo fogo"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento -->
+            <div class="my-5"></div>
+
+            <!-- Terceiro bloco de conteúdo -->
+            <div id="terceiroBloco" class="container hidden">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <h2 class="text-wrap">Leitura Sustentável, Futuro Sustentável</h2>
+                        <p> Nosso compromisso com o meio ambiente se reflete em cada página do nosso livro, produzido
+                            com papel 100% reciclado. Ao ler, você contribui para um futuro mais verde e sustentável.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="assets/IMG/terceiroBlocoBook.gif" alt="Animação simbolo da reciclagem"
+                            class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Espaçamento -->
+            <div class="my-5"></div>
+
+            <!-- Quarto bloco de conteúdo -->
+            <div id="quartoBloco" class="container hidden">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <h2 class="text-wrap">A Leitura Transforma!</h2>
+                        <p>A leitura expande horizontes, enriquece o vocabulário e estimula a criatividade. Mergulhe em
+                            novas histórias, conheça diferentes culturas e desenvolva seu potencial com a Aprenda+.</p>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <img src="assets/IMG/quartoBlocoBook.gif" alt="Animação mulher lendo livro" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FIM BLOCOS -->
+    </header>
+    <!-- FIM HEADER -->
+
+
+    <!-- INICIO MAIN -->
+    <main>
+
+        <div class="container hidden">
+            <h1>CONHEÇA NOSSO LIVRO AUTORAL</h1>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h2>Sobre o Livro</h2>
+                            <p class="card-text text-center">Em um reino mergulhado nas sombras da tirania, uma antiga profecia
+                                desperta, trazendo consigo a promessa de esperança e libertação. Um grupo de heróis
+                                improváveis, guiados pelo destino e unidos pela coragem, se ergue para enfrentar a
+                                ameaça que paira sobre Eldória. <br><br>
+
+                                Eros, o destemido lenhador anão, empunha seu machado com força e determinação. Zalazar,
+                                o sábio mago de cabelos prateados, manipula a magia arcana com maestria. Shimotsuki, o
+                                elfo samurai de honra inabalável, brande sua katana com precisão mortal. E Frost, o
+                                ex-guarda real de Eldória, luta com uma fúria descomunal, buscando redenção.<br><br>
+
+                                Juntos, eles embarcam em uma jornada épica em busca das pedras de Mithril, artefatos
+                                lendários que podem forjar armas poderosas o suficiente para derrotar o reino de Zenon.
+                                Mas o caminho para a vitória é repleto de perigos e desafios.<br><br>
+
+                                Em meio a batalhas épicas, traições inesperadas e revelações surpreendentes, os heróis
+                                de Eldória descobrirão que a verdadeira força reside na união, na amizade e na esperança
+                                de um futuro livre da opressão. <br><br>
+
+                                Acompanhe essa jornada emocionante em <strong>Crônicas de Eldória: A Guerra dos
+                                    Reinos</strong>, o primeiro livro de uma saga épica que te levará a um mundo de
+                                magia, aventura e mistério.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-body">
+                            <h2 class="text-center">Garanta nosso livro</h2>
+                            <p class="card-text text-center">Como estímulo à leitura e ao cuidado com o meio ambiente, <strong>a
+                                    Aprenda+ te presenteia com um exemplar do nosso livro autoral!</strong><br><br>
+
+                                Para garantir o seu, basta visitar um de nossos postos de coleta e entregar materiais
+                                recicláveis. A cada item entregue, você recebe um ticket para concorrer a prêmios
+                                incríveis. Não se esqueça de preencher seus dados de contato no ticket para participar
+                                do sorteio!<br><br>
+
+                                <strong>Junte-se a nós nessa jornada de aprendizado e sustentabilidade!</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="assets/IMG/capa_Livro.jpg" class="card-img-top img-fluid" alt="Capa do Livro">
+                    </div>
+                    <div class="card mt-3">
+                        <div class="card-body text-center">
+                            <h2>Disponível para ler online também!</h2>
+                            <a href="URL_DO_PDF" download class="btn btn-warning me-2 btn-lg m-2"><i class="fa-solid fa-file-arrow-down"></i> PDF</a>
+                            <a href="URL_DO_EPUB" download  class="btn btn-warning btn-lg m-2"><i class="fa-solid fa-file-arrow-down"></i> EPUB</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <!-- FIM MAIN -->
+
+
+
+
+
+    <!-- INICIO FOOTER -->
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <a href="index.html"><img src="assets/IMG/logo.png" alt="Logo Aprenda+" width="60px"
+                        height="40px"><br><br></a>
+                <p>"A educação é o nosso passaporte para o futuro, pois o amanhã pertence às pessoas que se preparam
+                    hoje."<br>-Malcolm X</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Mapa do site</h3>
+                </li>
+                <li>
+                    <a href="./about.html" class="footer-link">Sobre nós</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Para empresas</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Comunidade</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h3>Colaboradores</h3>
+                </li>
+                <li>
+                    <a href="https://descomplica.com.br/vestibulares/enem/?&msclkid=b5237bea7e0c1aa7300b1d86ee2af000&utm_source=bing&utm_medium=cpc&utm_campaign=bing-psq-sb_uee_performance_gwt-paid-media_meio_conversao_ongoing_venda_exata_marktech&utm_term=descomplica&utm_content=institucional_exata"
+                        class="footer-link">Descomplica</a>
+                </li>
+                <li>
+                    <a href="https://www.todamateria.com.br/" class="footer-link">Toda Matéria</a>
+                </li>
+                <li>
+                    <a href="https://brasilescola.uol.com.br/" class="footer-link">Brasil Escola</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Deixe suas sugestões</h3>
+
+                <p>
+                    Tem alguma ideia genial? Adoraríamos ouvir! Entre em contato com a gente e conte tudo.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="emailFooter" value="Digite seu e-mail">
+                    <button>
+                        <i class="fa-solid fa-envelope"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="copyright">
+            &#169
+            2024 Todos os direitos reservados
+        </div>
+    </footer>
+    <!-- FIM FOOTER -->
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="assets/JS/book.js"></script>
+</body>
+
+</html>

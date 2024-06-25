@@ -17,6 +17,14 @@ body{
     height: 100vh;
 }
 
+.fixed-top-left {
+    position: fixed;
+    top: 30px; /* Ajuste a distância do topo conforme necessário */
+    left: 20px; /* Ajuste a distância da esquerda conforme necessário */
+    z-index: 1030; /* Garante que o botão fique acima de outros elementos */
+  }
+  
+
 .container{
     background-color: #EDD989;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
