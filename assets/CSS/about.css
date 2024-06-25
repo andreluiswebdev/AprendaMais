@@ -254,6 +254,29 @@ body main{
     color: rgb(95, 66, 112);
 }
 
+#container1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#container2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#container3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
 .container:hover{
     color: rgb(237, 217, 137);
     background-color: rgb(95, 66, 112);
@@ -280,9 +303,6 @@ body main{
         height: 100%;
     }
 
-#container2{
-    width: 600px;
-}
 
 @media screen and (max-width:500px) {
     .container p{

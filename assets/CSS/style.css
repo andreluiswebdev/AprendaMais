@@ -14,6 +14,54 @@ body{
 }
 
 /* INICIO HEADER */
+.intro {
+    background-color: #180553;
+    color: white;
+    padding: 20px 0; 
+    padding-top: 100px;
+}
+
+.intro h1 {
+    font-size: 2.5rem; 
+    margin-bottom: 20px;
+}
+
+.intro a {
+    text-decoration: none; /* Remove a decoração dos links */
+}
+
+.intro button:hover{
+    transform: scale(1.065);
+}
+
+/* fazendo os icones chacoalhar */
+.intro i:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  /* fim icones chacoalhando */
+
+#container-home{
+    margin-bottom: 13%;
+}
+
+
+
+/* INICIO NAVBAR */
 .navbar{
     background-color: #EDD989;
 }
@@ -42,6 +90,7 @@ body{
 #button-header:hover{
     transform: scale(1.020);
 }
+/* FIM NAVBAR */
 
 /* FIM HEADER */
 
@@ -121,7 +170,6 @@ body main{
 footer{
     position: relative;
     width: 100%;
-    padding-top: 10%;
 }
 
 .footer-link {
@@ -273,3 +321,74 @@ footer{
 }
 /* FIM FOOTER */
 
+/*INICIO MAIN*/
+
+body main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    gap: 70px;
+    width: 100%;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container1{
+    width: 800px;
+}
+
+#container2{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container3{
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#container4{
+    width: 800px;
+}
+
+.container{
+    background-color: rgb(237, 217, 137);
+    border-radius: 20px;
+    transition: 0.5s;
+    padding: 20px;
+    width: 500px;
+    color: rgb(95, 66, 112);
+}
+
+.container p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+}
+
+.container:hover{
+    color: rgb(237, 217, 137);
+    background-color: rgb(95, 66, 112);
+    box-shadow: 5px 5px 50px #EDD989;
+}
+
+.container a{
+    color: inherit;
+}
+
+.container img{
+    width: 400px;
+    margin: 10px;
+}
+
+/*FIM MAIN*/
