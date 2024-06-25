@@ -192,35 +192,3 @@ body{
 .container.active .toggle-right{
     transform: translateX(200%);
 }
-
-#icon1{
-    position: absolute;
-    top: 55.2%;
-    right: 50px;
-    transform: translateY(-50%);
-    background: url('../IMG/olhoAberto.png');
-    background-size: cover;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-}
-#icon2{
-    position: absolute;
-    top: 52.7%;
-    right: 50px;
-    transform: translateY(-50%);
-    background: url('../IMG/olhoAberto.png');
-    background-size: cover;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-}
-
-#icon1.hide{
-    background: url('../IMG/olhoFechado.png');
-    background-size: cover;
-}
-#icon2.hide{
-    background: url('../IMG/olhoFechado.png');
-    background-size: cover;
-}
