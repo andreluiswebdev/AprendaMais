@@ -47,88 +47,124 @@ body{
 
 /*INÍCIO MAIN*/
 main{
-    padding: 32px 24px;
-    margin-top: 80PX;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: relative;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
-main h1{
-    font-size: 48px;
-    font-weight: 900;
+h1{
+    padding-top: 5%; /*usei para tirar a distancia do titulo p header*/
+}
+
+.titulo-estudos {
     color: #EDD989;
-}
-
-.assuntos{
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos para o grid */
+  .grid-container {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(4, 10rem);
-    width: 100%;
-}
-
-.assuntos button{
-    border: none;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas de largura igual */
+    gap: 20px; 
+  }
+  
+  .card-materia {
     background-color: #EDD989;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 12px;
-    border-radius: 12px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex; /* Usa flexbox para posicionar os elementos dentro do card */
+    flex-direction: column; /* Coloca os elementos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.5s ease;
+  }
+  
+  .card-materia i {
     color: #512da8;
-    margin: 12px;
-    transition: 0.5s ease;
-}
+    margin-bottom: 30px;
+    transition: all 0.5 ease;
+  }
 
-.assuntos button:hover{
-    background-color: #512da8;
+  /* aplicando hover apenas nas 3 primeiras matérias */
+  .grid-container > .card-materia:nth-child(-n+3):hover {
+    background-color: #180553;
+    box-shadow: 10px 10px 10px #EDD989;
+    transform: scale(1.025);
+  }
+  
+  .grid-container > .card-materia:nth-child(-n+3):hover i {
+    color: #EDD989; /* Muda a cor do ícone no hover */
+  }
+  
+  .grid-container > .card-materia:nth-child(-n+3):hover button {
+    color: #EDD989; /* Muda a cor do título no hover */
+  }
+  
+  .grid-container > .card-materia:nth-child(-n+3):hover button {
+    background-color: #EDD989; /* Muda a cor de fundo do botão no hover */
+    color: #180553; /* Muda a cor do texto do botão no hover */
+   
+  }
+
+  .card-materia button {
+    color: #512da8;
+    /* margin-bottom: 15px; */
+    border: none;
+    padding-top: 5%;
+  }
+  
+  .card-materia button {
+    display: block; /* Ocupa toda a largura disponível */
+    background-color: #4527a0; /* Cor de fundo do botão "Em breve" */
     color: #EDD989;
-    box-shadow: 5px 5px 50px #EDD989;
-}
-
-.botao_matematica{
-    cursor: pointer;
-}
-.botao_historia{
-    cursor: pointer;
-}
-.botao_portugues{
-    cursor: pointer;
-}
-    
-span{
-    font-size: 18px;
-    font-weight: 700;
-}
-
-.botao_inativo{
-    cursor: default;
-    opacity: 0.5;
-    border: none;
-    background-color: #EDD989;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    padding: 12px;
-    border-radius: 12px;
-    color: #512da8;
-    margin: 12px;
+    padding: 10px 20px;
     text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 15px;
+    cursor: pointer; /* Cursor padrão (não clicável) */
+  }
+  
+  .card-materia button:hover {
+    background-color: #311b92;
+  }
+
+.card-materia.inativo {
+  opacity: 0.5; /* Opacidade reduzida para os cards inativos */
 }
 
-.botao_inativo a{
-    text-decoration: none;
-    color: #512da8;
+.card-materia.inativo .em-breve {
+  display: block; /* Ocupa toda a largura disponível */
+  background-color: #4527a0; /* Cor de fundo do botão "Em breve" */
+  color: #EDD989;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 15px;
+  cursor: default; /* Cursor padrão (não clicável) */
 }
 
-@media (max-width: 540px){
-    .assuntos button{
-        flex-direction: column;
+  @media screen and (max-width: 1183px){
+    h1{
+        padding-top: 10%;
     }
-    .botao_inativo{
-        flex-direction: column;
+  }
+
+  @media screen and (max-width: 569px){
+    h1{
+        padding-top: 20%;
+        text-align: center;
+        margin-left: 2%;
+        margin-right: 2%;
     }
-}
+  }
+  
 /*INÍCIO MAIN*/
 
 /* INICIO FOOTER */
