@@ -61,20 +61,22 @@ main{
     flex-direction: column;
     height: 80vh;
     margin-top: 100px;
+    margin-bottom: 200px;
 }
 
 .container{
     background-color: #a877d8;
     display: grid;
     grid-template-columns: 50px auto 20% 20%;
-    grid-template-rows: repeat(6, 70px);
+    grid-template-rows: repeat(11, 70px);
     column-gap: 5px;
     row-gap: 5px;
     justify-content: stretch;
     align-items: center;
+    text-wrap: normal;
     width: 80%;
-    border-radius: 10px;
-    padding-bottom: 20px;
+    border-radius: 10px; 
+    padding-bottom: 2%;
 }
 
 main h1{
@@ -135,6 +137,51 @@ main h1{
     color: #e3e9f7;
 }
 
+.setimaFileira{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #512da8;
+    height: 90%;
+    color: #e3e9f7;
+}
+
+.oitavaFileira{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #512da8;
+    height: 90%;
+    color: #e3e9f7;
+}
+
+.nonaFileira{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #512da8;
+    height: 90%;
+    color: #e3e9f7;
+}
+
+.decimaFileira{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #512da8;
+    height: 90%;
+    color: #e3e9f7;
+}
+
+.decimaPrimeiraFileira{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: #512da8;
+    height: 90%;
+    color: #e3e9f7;
+}
+
 @media (max-width: 450px){
     .primeiraFileira{
         font-size: 1rem;
@@ -142,6 +189,11 @@ main h1{
     #item-7{
         text-wrap: wrap;
     }
+    .container .listas{
+        font-size: 0.7rem;
+    }
+    
+
 }
 
 
