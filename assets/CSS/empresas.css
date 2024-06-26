@@ -105,11 +105,10 @@ body{
 #botao-bloco:hover{
     transform: scale(1.040);
 }
+
+  
 /* FIM PRIMEIRO BLOCO */
 /* FIM HEADER */
-
-
-
 
 
 /* INICIO MAIN */
@@ -118,7 +117,7 @@ body{
 
 #container-patrocinadores{
     background-color: #fff;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-bottom: 5%;
 }
 
@@ -131,7 +130,7 @@ body{
 }
 
 #titulo-esquerda{
-    padding-top: 250px;
+    padding-top: 15%;
     text-align: center;
     padding-bottom: 5%;
     font-weight: bold;
