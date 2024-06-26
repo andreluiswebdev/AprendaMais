@@ -56,6 +56,7 @@ main{
 .pontuacao{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .pontuacao div {
     display: flex;
@@ -75,6 +76,7 @@ main{
     border:none;
     cursor: pointer;
 }
+
 
 @media screen and (max-width:446px){
     header{
