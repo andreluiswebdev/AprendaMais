@@ -71,6 +71,7 @@ main{
 }
 
 .conteudo button {
+    display: flex;
     padding: 16px;
     border-radius: 12px;
     background-color: rgb(120, 71, 148);
@@ -82,6 +83,8 @@ main{
     transition: 0.5s ease;
     border:none;
     cursor: pointer;
+    text-align: center;
+    align-items: center;
 }
 
 .conteudo div a{
