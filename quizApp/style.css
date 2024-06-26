@@ -77,6 +77,13 @@ main h1{
     border-radius: 12px;
     color: #512da8;
     margin: 12px;
+    transition: 0.5s ease;
+}
+
+.assuntos button:hover{
+    background-color: #512da8;
+    color: #EDD989;
+    box-shadow: 5px 5px 50px #EDD989;
 }
 
 .botao_matematica{
@@ -116,6 +123,9 @@ span{
 
 @media (max-width: 540px){
     .assuntos button{
+        flex-direction: column;
+    }
+    .botao_inativo{
         flex-direction: column;
     }
 }
