@@ -29,6 +29,29 @@ function validatePhone(input) {
     errorMsg.textContent = "";
   }
 }
+
+
+document.querySelector('.formulario').addEventListener('submit', function(e) {
+  e.preventDefault(); // Para prevenir o envio do formulário
+
+  // Verifica se todos os campos foram preenchidos
+  var todosPreenchidos = true;
+  document.querySelectorAll('.formulario input, .formulario select, .formulario textarea').forEach(function(campo) {
+      if (campo.value === '') {
+          todosPreenchidos = false;
+      }
+  });
+
+  if (todosPreenchidos) {
+      // Exibe a mensagem de agradecimento em um popup
+      alert('Obrigada pelo contato! Recebemos sua mensagem e logo entraremos em contato.');
+
+      // Limpa o formulário
+      e.target.reset();
+  } else {
+      alert('Por favor, preencha todos os campos.');
+  }
+});
 // FIM FORM
 
 
@@ -48,3 +71,8 @@ function reveal() {
     }
   }
 }
+
+
+
+
+
