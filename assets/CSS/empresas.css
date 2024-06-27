@@ -142,7 +142,7 @@ body{
 #container-patrocinadores img { /* Estiliza todas as imagens dentro do container */
     width: 150px; /* Defina uma largura fixa para todas as imagens */
     height: auto; /* Mantém a proporção original da imagem */
-    margin: 10px auto; /* Adiciona 10px de espaçamento em cima/embaixo e centraliza horizontalmente */
+    margin: 10px auto;*/ /* Adiciona 10px de espaçamento em cima/embaixo e centraliza horizontalmente */
     display: block; /* Garante que a imagem seja um elemento de bloco para centralizar corretamente */
 }
 
@@ -284,10 +284,6 @@ body{
     #p-form{
         text-align: center;
     }
-    #img-form{
-        margin-left: 25%;
-        margin-right: 30%;
-  }
 }
 
 .form-group{
