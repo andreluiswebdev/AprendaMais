@@ -193,6 +193,15 @@ body{
     .tab-item {
       font-size: 4vw; /* Ajuste o valor conforme necessário */
     }
+    #tab1{
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+    }#tab2{
+        font-size: 0.7rem;
+    }#tab3{
+        font-size: 0.7rem;
+    }
   }
   
   .tab-item:hover {
