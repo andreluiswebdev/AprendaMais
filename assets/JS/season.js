@@ -1,5 +1,3 @@
-// inicio footer
-
 document.querySelector('#submitSuggestion').addEventListener('click', function() {
     var email = document.querySelector('.emailSuggestion').value;
     var emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/; // Regex para validar o e-mail
@@ -12,4 +10,3 @@ document.querySelector('#submitSuggestion').addEventListener('click', function()
     }
   });
   
-  // fim footer
