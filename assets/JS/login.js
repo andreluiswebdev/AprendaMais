@@ -23,7 +23,7 @@ formRegister.addEventListener('submit', function(event){
     const inputPassword = passwordRegister.value
     localStorage.setItem("email", inputEmail)
     localStorage.setItem("password", inputPassword)
-    msgCriado.innerHTML = 'Perfil criado com sucesso!!.';
+    msgCriado.innerHTML = 'Perfil criado com sucesso! Inicie a sessão para começar a estudar.';
 })
 
 let formLogin = document.querySelector("#formLogin")
