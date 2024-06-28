@@ -101,7 +101,7 @@ main h1{
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: #180553;
+    background-color: #3b16a8;
     height: 90%;
     color: #e3e9f7;
     box-shadow: 10px 10px 10px #EDD989;
@@ -112,7 +112,7 @@ main h1{
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: #180553;
+    background-color: #3b16a8;
     height: 90%;
     color: #e3e9f7;
     animation: shake 2s;
@@ -123,7 +123,7 @@ main h1{
     justify-content: center;
     display: flex;
     align-items: center;
-    background-color: #180553;
+    background-color: #3b16a8;
     height: 90%;
     animation: shake 2s;
     animation-iteration-count: infinite;

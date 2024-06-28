@@ -5,7 +5,7 @@
             "icon": "./img/matematica.png",
             "questions": [
                 {
-                    "question":"Em um projeto para a construção de um cinema, os arquitetos estão avaliando a relação entre a quantidade de fileiras e a quantidade de cadeiras em cada fileira. O projeto inicial prevê uma salapara 304 pessoas. No caso de utilizarem 19 fileiras, o número de cadeiras por fileira será:",
+                    "question":"Em um projeto para a construção de um cinema, os arquitetos estão avaliando a relação entre a quantidade de fileiras e a quantidade de cadeiras em cada fileira. O projeto inicial prevê uma sala para 304 pessoas. No caso de utilizarem 19 fileiras, o número de cadeiras por fileira será:",
                     "options":[
                         "14",
                         "15",
@@ -151,7 +151,7 @@
                     "question":"Raskolnikov tinha uma teoria sobre sobre os homens superiores. Ele acreditava que os homens superiores eram aqueles que tinha o de cometer crimesem nome de uma causa causa maior. Raskolnikov acreditava que ele era um homem superior. Ele acreditava que tinha o direito de matar a velha avarenta para ajudar os pobres[...] O texto apresentado exemplifica a construção de um anti-heroi. Dentre as caracteristicas desse tipo de personagem, relacionado com a descrição de Raskolnikov, é evidente que ele é",
                     "options":[
                         "alegre e determinado, busca realizar os seus feitos se preocupando com os valores.", 
-                        "inpulsivo, age sem se questionar sobre as consequências dos atos.", 
+                        "impulsivo, age sem se questionar sobre as consequências dos atos.", 
                         "desprendido de valores morais, agindo sem pensar nas atitudes.", 
                         "complexo e ambiguo, demonstrando desejos e valores."
                     ],

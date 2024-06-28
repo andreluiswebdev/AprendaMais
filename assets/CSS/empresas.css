@@ -72,7 +72,7 @@ body{
 /* INICIO PRIMEIRO BLOCO */
 
 #container-bloco{
-    background-color: #180553;
+    background-color: #3b16a8;
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -205,14 +205,14 @@ body{
   }
   
   .tab-item:hover {
-    background-color: #180553;
+    background-color: #3b16a8;
     color: #EDD989;
     box-shadow: 10px 10px 10px #EDD989;
     cursor: pointer;
   }
   
   .tab-item.active {
-    background-color: #180553;
+    background-color: #53226D;
     color: #EDD989;
   }
   
@@ -263,7 +263,7 @@ body{
 
 /* INICIO FORM */
 #container-form{
-    background-color: #180553;
+    background-color: #3b16a8;
     padding-top: 5%;
     padding-bottom: 5%;
 }
