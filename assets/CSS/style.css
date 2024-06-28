@@ -15,7 +15,7 @@ body{
 
 /* INICIO HEADER */
 .intro {
-    background-color: #180553;
+    background-color: #3b16a8;
     color: white;
     padding: 20px 0; 
     padding-top: 100px;
@@ -148,7 +148,7 @@ main h1{
   }  
 
 .card .card-body{
-    background-color: #180553;
+    background-color: #3b16a8;
     color: #EDD989;
 }
 
@@ -220,7 +220,7 @@ main h1{
 
 /* INICIO BLOCOS */
 #container-blocos{
-    background-color: #180553;
+    background-color: #3b16a8;
 }
 
 #container-blocos h2{

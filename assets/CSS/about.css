@@ -105,7 +105,7 @@ main h5{
   }
 
   main .card:hover{
-    background-color: #180553;
+    background-color: #3b16a8;
     box-shadow: 10px 10px 10px #EDD989;
     transform: scale(1.025);
   }
