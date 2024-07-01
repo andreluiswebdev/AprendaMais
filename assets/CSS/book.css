@@ -76,7 +76,6 @@ header h1{
 }
 
 #primeiroBloco{
-    padding-top: 5%;
     margin-bottom: 10%;
 }
 
@@ -159,7 +158,18 @@ main h1{
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     animation: reveal 1s ease-in-out;
   }
-
+.botaoSaibaMais{
+    display: block;
+    background-color: #4527a0;
+    color: #EDD989;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+}
 
 main h2{
     font-size: 2.0rem; 
